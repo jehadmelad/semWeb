@@ -1,0 +1,2507 @@
+@prefix az:   <https://w3id.org/people/az/> .
+@prefix bio:  <http://purl.org/vocab/bio/0.1/> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix dblp: <https://dblp.uni-trier.de/rdf/schema#> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix dbfr: <http://fr.dbpedia.org/resource/> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix me:   <https://w3id.org/people/az/me#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swc:  <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd:   <http://www.wikidata.org/entity/> .
+@prefix wdt:  <http://www.wikidata.org/prop/direct/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    a foaf:Document ;
+    dc:creator az:me ;
+    rdfs:comment "This is the authoritative FOAF profile of Antoine Zimmermann, researcher in Computer Science."@en, "Ceci est le profile FOAF officiel d'Antoine Zimmermann, chercheur en informatique."@fr ;
+    dc:date "2017-03-28T17:42:42+01:00"^^xsd:dateTime ;
+    dc:modified "2019-06-05T14:42:42+02:00"^^xsd:dateTime .
+
+az:me
+    cert:key [
+                 a cert:RSAPublicKey;
+                 cert:exponent 65537;
+                 cert:modulus "e3b723ed6c35116e8cc0ebaeb858e651fe1ace2cbd3f40838910be8e4c056b1e5e11172a7443f88f53d51e26819e83d3fea30ae2cc3efcde5dfc2909d1cdefb434ca849b47907dbff47dfbb5cf027a8115fcf296a75e1ad5bb82a85ece9a07cef74bef1d26c82f8ee4d518d0c50141068e9d28cff1a28cea4fbd873a7ae2ff8ee0b98376b4ccb8a2ff81a648d61dc2833fba7bfeba593d2d0a7a9ab4e7e9937edc21b57c2aa8a2b0afb4e320f1d9233d1b91f6ca4d5febae2e4e451d1954bdc9433f06489f2a51f041594f7403af77a0dbabba7a9f8bfd9d32c17799d4417b4c6baeb041be429a77b1f46bbac98569a55c52a413cd485e08243a31ac221fd7af"^^xsd:hexBinary;
+             ] ;
+    a foaf:Person ;
+    rdfs:seeAlso az:cv ;
+    rdfs:comment """Antoine Zimmermann graduated from the Ã‰cole Nationale SupÃ©rieure d'Informatique et de MathÃ©matiques AppliquÃ©es de Grenoble and got a Master of Science from the UniversitÃ© Joseph Fourier, Grenoble, France. He hold a Doctorate in Computer Science from UniversitÃ© Joseph Fourier, where he defended in October 2008. Between February 2009 and September 2010, he worked at the Digital Enterprise Research Institute, at the National University of Ireland, Galway. Between October 2010 and August 2011, he was a lecturer at Institut Nationale de Sciences AppliquÃ©es de Lyon (INSA Lyon) and a researcher at Laboratoire d'InfoRmatique en Image et SystÃ¨me d'information (LIRIS). Since September 2011, he is teaching at Ã‰cole des Mines de Saint-Ã‰tienne and is a member of Institut Henri Fayol. He conducts his research in Laboratoire Hubert Curien as part of the research group Connected Intelligence.
+
+His research interests are related to knowledge representation and reasoning in open, decentralised environments such as the World Wide Web, where the notion of context of information is key. This leads him to investigate the fields of contextual reasoning, annotated logics, reasoning with provenance, time, uncertainty, fuzziness, access control; the Semantic Web, the Web of data, Linked Data, open data. Antoine is a believer in open standards and has participated in W3C standardisation groups."""@en ;
+    owl:sameAs
+        <http://data.semanticweb.org/person/antoine-zimmermann>,
+        <http://dblp.l3s.de/d2r/resource/authors/Antoine_Zimmermann>,
+        <https://dblp.uni-trier.de/pers/z/Zimmermann:Antoine>,
+        <https://dblp.org/pers/z/Zimmermann:Antoine>,
+        <https://dblp.uni-trier.de/pid/91/1410>,
+        <https://dblp.org/pid/91/1410>,
+        <http://orcid.org/0000-0003-1502-6986>,
+        viaf:201186754,
+        viaf:316556112,
+        <https://w3id.org/scholarlydata/person/antoine-zimmermann>,
+        <https://www.deri.ie/users/antoine-zimmermann>,
+        <http://www.emse.fr/~zimmermann/antoine#me>,
+        wd:Q56447936,
+        <http://zimmer.aprilfoolsreview.com/antoine#me> ;
+    rdfs:label
+        "Antoine Zimmermann"@de,
+        "Antoine Zimmermann"@en,
+        "Antoine Zimmermann"@es,
+        "Antoine Zimmermann"@fr,
+        "Antoine Zimmermann"@it,
+        "Antoine Zimmermann"@nl,
+        "Antoine Zimmermann"@pl,
+        "Antoine Zimmermann"@pt;
+    foaf:name
+        "Antoine Zimmermann"@de,
+        "Antoine Zimmermann"@en,
+        "Antoine Zimmermann"@es,
+        "Antoine Zimmermann"@fr,
+        "Antoine Zimmermann"@it,
+        "Antoine Zimmermann"@nl,
+        "Antoine Zimmermann"@pl,
+        "Antoine Zimmermann"@pt;
+    foaf:firstName
+        "Antoine"@de,
+        "Antoine"@en,
+        "Antoine"@es,
+        "Antoine"@fr,
+        "Antoine"@it,
+        "Antoine"@nl,
+        "Antoine"@pl,
+        "Antoine"@pt ;
+    foaf:givenname
+        "Antoine"@de,
+        "Antoine"@en,
+        "Antoine"@es,
+        "Antoine"@fr,
+        "Antoine"@it,
+        "Antoine"@nl,
+        "Antoine"@pl,
+        "Antoine"@pt ;
+    foaf:surname
+        "Zimmermann"@de,
+        "Zimmermann"@en,
+        "Zimmermann"@es,
+        "Zimmermann"@fr,
+        "Zimmermann"@it,
+        "Zimmermann"@nl,
+        "Zimmermann"@pl,
+        "Zimmermann"@pt ;
+    foaf:family_name
+        "Zimmermann"@de,
+        "Zimmermann"@en,
+        "Zimmermann"@es,
+        "Zimmermann"@fr,
+        "Zimmermann"@it,
+        "Zimmermann"@nl,
+        "Zimmermann"@pl,
+        "Zimmermann"@pt ;
+    foaf:mbox
+        <mailto:antoine.zimmermann@emse.fr>,
+        <mailto:antoine.zimmermann@gmail.com> ;
+    foaf:homepage <https://w3id.org/people/az/> ;
+    foaf:phone <tel:+33-4-77-66-03> ;
+    dbo:birthDate "1981-01-14"^^xsd:date ;
+    dbo:placeOfBirth <http://id.insee.fr/geo/commune/68066> ;
+    dbo:nationality <http://id.insee.fr/geo/pays/france> ;
+    rdfs:seeAlso
+        <http://scholar.google.com/citations?user=Miw4DgIAAAAJ&hl=en>,
+        <http://fr.linkedin.com/pub/antoine-zimmermann/5/505/416>,
+        <http://www.informatik.uni-trier.de/~ley/pers/hd/z/Zimmermann:Antoine.html>,
+        <http://www.researchgate.net/profile/Antoine_Zimmermann>,
+        <https://twitter.com/MonsieurAZ> ;
+    dbo:almaMater
+        dbr:Joseph_Fourier_University,
+        <http://dbpedia.org/resource/Ã‰cole_nationale_supÃ©rieure_d'informatique_et_de_mathÃ©matiques_appliquÃ©es_de_Grenoble>,
+        <http://fr.dbpedia.org/resource/LycÃ©e_Henri-PoincarÃ©>,
+        <http://fr.dbpedia.org/resource/LycÃ©e_Stanislas_(Villers-lÃ¨s-Nancy)>,
+        [ rdfs:label "CollÃ¨ge Haut-de-Penoy"@fr ],
+        [ rdfs:label "Ã‰cole Ã©lÃ©mentaire publique Les Aiguillettes"@fr ] ;
+    dbo:award
+        [ rdfs:comment "Best mini-project at the Third European Summer School on the Semantic Web and Ontological Engineering (SSSW'05) with Anne Cregan, Malgorzata Mochol, and Denny VrandeÄiÄ‡"@en ],
+        [ rdfs:comment "Best paper award at the Second International Workshop on Semantic Media Adaptation and Personalization (SMAP'07) with SÃ©bastien Laborie"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/smap07-bestpaperaward.jpg>;
+          rdfs:seeAlso <https://sites.google.com/site/groupsmap/best-paper-awards> ],
+        [ rdfs:comment "Best position paper award at the First International Workshop on Agreement Technologies (AT 2012) with MÄƒdÄƒlina Zarafin and Olivier Boissier"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/best-paper-AT2012.pdf>;
+          rdfs:seeAlso <http://at2012.tel.fer.hr/gallery/content/_MG_2879_large.html> ],
+        [ rdfs:comment "Best reviewer award for the 13th International Semantic Web Conference (together with Birte Glimm)"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/best-reviewer-ISWC2014.pdf>;
+          rdfs:seeAlso <http://iswc2014.semanticweb.org/awards.html> ],
+        [ rdfs:comment "Best paper award at the 3rd International Workshop on Dataset PROFIling and fEderated Search for Linked Data (PROFILES 2016) with JosÃ© M. GimÃ©nez-GarcÃ­a and Harsch Thakkar"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/profiles16-bestpaperaward.jpg> ],
+        [ rdfs:comment "2016 outstanding reviewer award for the Semantic Web Journal"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/best-reviewer-SWJ2016.pdf>;
+          rdfs:seeAlso <http://www.semantic-web-journal.net/blog/semantic-web-journal-awards-2016> ],
+        [ rdfs:comment "Best paper award at the 6th International Conference on the Internet of Things (IoT 2016) together with Andrei Ciortea, Olivier Boissier and Adina Florea"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/best-paper-IoT2016.pdf> ],
+        [ rdfs:comment "Best paper award at the 15th German Conference on Multiagent System Technologies (MATES 2017)"@en;
+          foaf:depiction <http://www.emse.fr/~zimmermann/images/best-paper-MATES2017.pdf> ];
+    foaf:pastProject
+        me:wot-wg,
+        wd:Q42365752,
+        me:opensensingcity,
+        me:sdw-wg,
+        me:vigi4med,
+        me:seas,
+        me:lodsem,
+        me:rdf11-wg,
+        me:agreement-technologies,
+        me:owl2-wg,
+        me:lion2,
+        <http://semanticweb.org/id/NEON>,
+        <http://semanticweb.org/id/Knowledge_Web> ;
+    dblp:authorOf
+        <https://dblp.uni-trier.de/rec/journals/access/KhanZJGdS19>,
+        <https://dblp.uni-trier.de/rec/journals/cai/KlaiZK19>,
+        <https://dblp.uni-trier.de/rec/journals/semweb/GillaniZPL19>,
+        <https://dblp.uni-trier.de/rec/conf/atal/CiorteaMGBRZ19>,
+        <https://dblp.uni-trier.de/rec/conf/ic3k/QawasmehLZM19>,
+        <https://dblp.uni-trier.de/rec/journals/iotj/GyrardZS18>,
+        <https://dblp.uni-trier.de/rec/conf/esws/BakerallyZB18>,
+        <https://dblp.uni-trier.de/rec/conf/esws/QawasmehLZM18>,
+        <https://dblp.uni-trier.de/rec/conf/esws/BakerallyZB18a>,
+        <https://dblp.uni-trier.de/rec/conf/esws/LefrancoisZ18>,
+        <https://dblp.uni-trier.de/rec/journals/corr/abs-1804-05639>,
+        <https://dblp.uni-trier.de/rec/conf/kcap/EndrisGTDZ0S17>,
+        <https://dblp.uni-trier.de/rec/conf/bigdataconf/KhanZJRS17>,
+        <https://dblp.uni-trier.de/rec/conf/semweb/BakerallyZ17>,
+        <https://dblp.uni-trier.de/rec/conf/f-egc/LefrancoisZB17>,
+        <https://dblp.uni-trier.de/rec/conf/f-egc/LefrancoisZ17>,
+        <https://dblp.uni-trier.de/rec/rdf/conf/webi/KemBZ17>,
+        <https://dblp.uni-trier.de/rec/rdf/conf/semweb/ZimmermannG17>,
+        <https://dblp.uni-trier.de/rec/conf/mates/KemBZ17>,
+        <https://dblp.uni-trier.de/rec/conf/kes/KemBZN17>,
+        <https://dblp.uni-trier.de/rec/conf/esws/Gimenez-GarciaZ17>,
+        <https://dblp.uni-trier.de/rec/conf/esws/LefrancoisZB17>,
+        <https://dblp.uni-trier.de/rec/conf/atal/CiorteaBZF17a>,
+        <https://dblp.uni-trier.de/rec/conf/atal/CiorteaBZF17>,
+        <https://dblp.uni-trier.de/rec/journals/corr/abs-1709-04970>,
+        <https://dblp.uni-trier.de/rec/conf/ekaw/Gimenez-GarciaZ16>,
+        <https://dblp.uni-trier.de/rec/conf/ekaw/LefrancoisZB16>,
+        <https://dblp.uni-trier.de/rec/conf/wot/CiorteaZBF16>,
+        <https://dblp.uni-trier.de/rec/conf/iot/CiorteaBZF16>,
+        <https://dblp.uni-trier.de/rec/journals/ijmso/KlaiZK16>,
+        <https://dblp.uni-trier.de/rec/conf/esws/BakerallyBZ16>,
+        <https://dblp.uni-trier.de/rec/conf/esws/Gimenez-GarciaT16a>,
+        <https://dblp.uni-trier.de/rec/conf/esws/Gimenez-GarciaT16>,
+        <https://dblp.uni-trier.de/rec/journals/corr/Gimenez-GarciaZ16>,
+        <https://dblp.uni-trier.de/rec/conf/esws/LefrancoisZ16>,
+        <https://dblp.uni-trier.de/rec/conf/medi/KlaiZK16>,
+        <https://dblp.uni-trier.de/rec/conf/otm/CalvierKZSF16>,
+        <https://dblp.uni-trier.de/rec/conf/semco/PetersenGCAFTLZ16>,
+        <https://dblp.uni-trier.de/rec/conf/webi/KemBZ16>,
+        <https://dblp.uni-trier.de/rec/conf/f-ic/LefrancoisZ15>,
+        <https://dblp.uni-trier.de/rec/conf/webi/CiorteaZBF15>,
+        <https://dblp.uni-trier.de/rec/conf/aaai/BelloniBBBBCCEG15>,
+        <https://dblp.uni-trier.de/rec/journals/cee/SoriciPBZF15>,
+        <https://dblp.uni-trier.de/rec/journals/jaise/GravierSZ15>,
+        <https://dblp.uni-trier.de/rec/conf/synasc/CiorteaBZF14>,
+        <https://dblp.uni-trier.de/rec/conf/esws/ZimmermannGSC13>,
+        <https://dblp.uni-trier.de/rec/conf/huc/CiorteaBZF13>,
+        <https://dblp.uni-trier.de/rec/conf/ore/DucLZC13>,
+        <https://dblp.uni-trier.de/rec/journals/ws/HoganZUPD12>,
+        <https://dblp.uni-trier.de/rec/journals/ws/ZimmermannLPS12>,
+        <https://dblp.uni-trier.de/rec/conf/at/ZarafinZB12>,
+        <https://dblp.uni-trier.de/rec/conf/at/SzmejaZ12>,
+        <https://dblp.uni-trier.de/rec/conf/iclp/0002KZPM12>,
+        <https://dblp.uni-trier.de/rec/conf/IEEEares/SahayFZPH11>,
+        <https://dblp.uni-trier.de/rec/conf/context/DumitracheMZPOF11>,
+        <https://dblp.uni-trier.de/rec/conf/iat/Zimmermann11>,
+        <https://dblp.uni-trier.de/rec/journals/corr/abs-1103-1255>,
+        <https://dblp.uni-trier.de/rec/conf/colcom/HauswirthEFGHJGHZPZ10>,
+        <https://dblp.uni-trier.de/rec/conf/ic3k/DucLZ10>,
+        <https://dblp.uni-trier.de/rec/conf/iswsa/PassantZSB10>,
+        <https://dblp.uni-trier.de/rec/conf/semweb/LopesPSZ10>,
+        <https://dblp.uni-trier.de/rec/conf/otm/ZimmermannSFP09>,
+        <https://dblp.uni-trier.de/rec/conf/rr/ZimmermannD08>,
+        <https://dblp.uni-trier.de/rec/phd/hal/Zimmermann08>,
+        <https://dblp.uni-trier.de/rec/conf/wonto/BezerraFZE08>,
+        <https://dblp.uni-trier.de/rec/conf/dlog/Zimmermann07>,
+        <https://dblp.uni-trier.de/rec/conf/kcap/EuzenatZF07>,
+        <https://dblp.uni-trier.de/rec/conf/smap/LaborieZ07>,
+        <https://dblp.uni-trier.de/rec/conf/waim/JungZE07>,
+        <https://dblp.uni-trier.de/rec/conf/fois/ZimmermannKEH06>,
+        <https://dblp.uni-trier.de/rec/conf/semweb/ZimmermannE06>,
+        me:AudehBZJB17,
+        me:KemBZ16,
+        me:BelloniBBBBCCEGJMPRSSTVVZ14,
+        me:GillaniPLZ14,
+        me:CiorteaBZF13,
+        me:SoriciBPZ13,
+        me:SahayZFPH13,
+        me:Zimmermann12,
+        me:LopesZHLPSD10,
+        me:HoganPUZ10,
+        me:Zimmermann10,
+        me:BezerraFEZ09,
+        me:LaborieZ09,
+        me:AlkhateebZ07fr,
+        me:AlkhateebZ07,
+        me:Zimmermann04 ;
+    dblp:editorOf
+        <https://dblp.uni-trier.de/rec/conf/kr/2018medracer>,
+        <https://dblp.uni-trier.de/rec/conf/esws/2015>,
+        <https://dblp.uni-trier.de/rec/conf/esws/2015s>,
+        <https://dblp.uni-trier.de/rec/conf/esws/2015semwebeval> ;
+    foaf:knows
+        <https://dblp.uni-trier.de/pers/a/Agius:Harry_W=>,
+        <https://dblp.uni-trier.de/pers/a/Aguilar:Antonio>,
+        <https://dblp.uni-trier.de/pers/a/Ahmed:Usman>,
+        <https://dblp.uni-trier.de/pers/a/Alkhateeb:Faisal>,
+        <https://dblp.uni-trier.de/pers/a/Amir:Samir>,
+        <https://dblp.uni-trier.de/pers/a/Amjad:Shanzay>,
+        <https://dblp.uni-trier.de/pers/a/Ammar:Oussama_Ben>,
+        <https://dblp.uni-trier.de/pers/a/Antoniazzi:Francesco>,
+        <https://dblp.uni-trier.de/pers/a/Atemezing:Ghislain_Auguste>,
+        <https://dblp.uni-trier.de/pers/a/Auer:S=ouml=ren>,
+        <https://dblp.uni-trier.de/pers/a/Aussenac=Gilles:Nathalie>,
+        <https://dblp.uni-trier.de/pers/b/Badeig:Fabien>,
+        <https://dblp.uni-trier.de/pers/b/Bakerally:Noorani>,
+        <https://dblp.uni-trier.de/pers/b/Balbo:Flavien>,
+        <https://dblp.uni-trier.de/pers/b/Bancilhon:Fran=ccedil=ois>,
+        <https://dblp.uni-trier.de/pers/b/Bao:Jie>,
+        <https://dblp.uni-trier.de/pers/b/Beaune:Philippe>,
+        <https://dblp.uni-trier.de/pers/b/Benammar:Riyadh>,
+        <https://dblp.uni-trier.de/pers/b/Berger:Alain>,
+        <https://dblp.uni-trier.de/pers/b/Bezerra:Camila>,
+        <https://dblp.uni-trier.de/pers/b/Bischof:Stefan>,
+        <https://dblp.uni-trier.de/pers/b/Blomqvist:Eva>,
+        <https://dblp.uni-trier.de/pers/b/Blumauer:Andreas>,
+        <https://dblp.uni-trier.de/pers/b/Boissier:Olivier>,
+        <https://dblp.uni-trier.de/pers/b/Bonnet:Gr=eacute=gory>,
+        <https://dblp.uni-trier.de/pers/b/Bordea:Georgeta>,
+        <https://dblp.uni-trier.de/pers/b/Both:Andreas>,
+        <https://dblp.uni-trier.de/pers/b/Bousquet:C=eacute=dric>,
+        <https://dblp.uni-trier.de/pers/b/Braillon:Christophe>,
+        <https://dblp.uni-trier.de/pers/b/Breslin:John_G=>,
+        <https://dblp.uni-trier.de/pers/b/Brickley:Dan>,
+        <https://dblp.uni-trier.de/pers/b/Burlet:Julien>,
+        <https://dblp.uni-trier.de/pers/c/Cabrio:Elena>,
+        <https://dblp.uni-trier.de/pers/c/Calvez:Philippe>,
+        <https://dblp.uni-trier.de/pers/c/Calvier:Fran=ccedil=ois==Eacute=lie>,
+        <https://dblp.uni-trier.de/pers/c/Cerioni:Alessandro>,
+        <https://dblp.uni-trier.de/pers/c/Ciortea:Andrei>,
+        <https://dblp.uni-trier.de/pers/c/Coquerelle:Mathieu>,
+        <https://dblp.uni-trier.de/pers/c/Corlosquet:Stephane>,
+        <https://dblp.uni-trier.de/pers/c/Coskun:G=ouml=khan>,
+        <https://dblp.uni-trier.de/pers/c/Cregan:Anne>,
+        <https://dblp.uni-trier.de/pers/c/Cruzille:Quentin>,
+        <https://dblp.uni-trier.de/pers/c/Cudr=eacute==Mauroux:Philippe>,
+        <https://dblp.uni-trier.de/pers/c/Cur=eacute=:Olivier>,
+        <https://dblp.uni-trier.de/pers/c/Curry:Edward>,
+        <https://dblp.uni-trier.de/pers/d/d=Amato:Claudia>,
+        <https://dblp.uni-trier.de/pers/d/d=Aquin:Mathieu>,
+        <https://dblp.uni-trier.de/pers/d/Dabrowska:Anna>,
+        <https://dblp.uni-trier.de/pers/d/Dabrowski:Maciej>,
+        <https://dblp.uni-trier.de/pers/d/Dadzie:Aba=Sah>,
+        <https://dblp.uni-trier.de/pers/d/David:J=eacute=r=ocirc=me>,
+        <https://dblp.uni-trier.de/pers/d/Debattista:Jeremy>,
+        <https://dblp.uni-trier.de/pers/d/Debayle:Johan>,
+        <https://dblp.uni-trier.de/pers/d/Decker:Stefan>,
+        <https://dblp.uni-trier.de/pers/d/Delbru:Renaud>,
+        <https://dblp.uni-trier.de/pers/d/Demidova:Elena>,
+        <https://dblp.uni-trier.de/pers/d/Derguech:Wassim>,
+        <https://dblp.uni-trier.de/pers/d/Deus:Helena_F=>,
+        <https://dblp.uni-trier.de/pers/d/Diefenbach:Dennis>,
+        <https://dblp.uni-trier.de/pers/d/Dietze:Stefan>,
+        <https://dblp.uni-trier.de/pers/d/Dirschl:Christian>,
+        <https://dblp.uni-trier.de/pers/d/Doolin:Kevin>,
+        <https://dblp.uni-trier.de/pers/d/Dragan:Laura>,
+        <https://dblp.uni-trier.de/pers/d/Duarte:Maisa_C>,
+        <https://dblp.uni-trier.de/pers/d/Duc:Chan_Le>,
+        <https://dblp.uni-trier.de/pers/d/Dumitrache:Anca>,
+        <https://dblp.uni-trier.de/pers/e/Eckert:Kai>,
+        <https://dblp.uni-trier.de/pers/e/Endris:Kemele_M=>,
+        <https://dblp.uni-trier.de/pers/e/ElSahar:Hady>,
+        <https://dblp.uni-trier.de/pers/e/Euzenat:J=eacute=r=ocirc=me>,
+        <https://dblp.uni-trier.de/pers/f/Fayolle:Jacques>,
+        <https://dblp.uni-trier.de/pers/f/Faron=Zucker:Catherine>,
+        <https://dblp.uni-trier.de/pers/f/Florea:Adina_Magda>,
+        <https://dblp.uni-trier.de/pers/f/Fotso:Vanel_Steve_Siyou>,
+        <https://dblp.uni-trier.de/pers/f/Fox:Ronan>,
+        <https://dblp.uni-trier.de/pers/f/Fraboulet:Antoine>,
+        <https://dblp.uni-trier.de/pers/f/Freitas:Andr=eacute=>,
+        <https://dblp.uni-trier.de/pers/f/Freitas:Frederico_Luiz_Gon=ccedil=alves_de>,
+        <https://dblp.uni-trier.de/pers/f/Fr=eacute=ry:Jordan>,
+        <https://dblp.uni-trier.de/pers/f/Friel:Owen>,
+        <https://dblp.uni-trier.de/pers/f/Frommhold:Marvin>,
+        <https://dblp.uni-trier.de/pers/g/G=oacute=mez=P=eacute=rez:Asunci=oacute=n>,
+        <https://dblp.uni-trier.de/pers/g/Gadepally:Vijay>,
+        <https://dblp.uni-trier.de/pers/g/Gandon:Fabien_L=>,
+        <https://dblp.uni-trier.de/pers/g/Garc=iacute=a=Castro:Ra=uacute=l>,
+        <https://dblp.uni-trier.de/pers/g/Gautheron:L=eacute=o>,
+        <https://dblp.uni-trier.de/pers/g/Gayo:Jos=eacute=_Emilio_Labra>,
+        <https://dblp.uni-trier.de/pers/g/Genev=egrave=s:Pierre>,
+        <https://dblp.uni-trier.de/pers/g/Ghoula:Nizar>,
+        <https://dblp.uni-trier.de/pers/g/Gillani:Syed>,
+        <https://dblp.uni-trier.de/pers/g/Gim=eacute=nez=Garc=iacute=a:Jos=eacute=_M=>,
+        <https://dblp.uni-trier.de/pers/g/Gonzalez=Feliu:Jesus>,
+        <https://dblp.uni-trier.de/pers/g/Grangel=Gonz=aacute=lez:Irl=aacute=n>,
+        <https://dblp.uni-trier.de/pers/g/Gravier:Christophe>,
+        <https://dblp.uni-trier.de/pers/g/Gray:Alasdair_J=_G=>,
+        <https://dblp.uni-trier.de/pers/g/Griffin:Keith>,
+        <https://dblp.uni-trier.de/pers/g/Grigorov:Ilko>,
+        <https://dblp.uni-trier.de/pers/g/Groth:Paul_T=>,
+        <https://dblp.uni-trier.de/pers/g/Groza:Tudor>,
+        <https://dblp.uni-trier.de/pers/g/Grzonkowski:Slawomir>,
+        <https://dblp.uni-trier.de/pers/g/Gu=eacute=ret:Christophe>,
+        <https://dblp.uni-trier.de/pers/g/G=uuml=rcan:=Ouml=nder>,
+        <https://dblp.uni-trier.de/pers/g/Gyrard:Amelie>,
+        <https://dblp.uni-trier.de/pers/h/Haase:Peter>,
+        <https://dblp.uni-trier.de/pers/h/Halpin:Harry>,
+        <https://dblp.uni-trier.de/pers/h/Hamadache:Billel>,
+        <https://dblp.uni-trier.de/pers/h/Handschuh:Siegfried>,
+        <https://dblp.uni-trier.de/pers/h/Harth:Andreas>,
+        <https://dblp.uni-trier.de/pers/h/Hausenblas:Michael>,
+        <https://dblp.uni-trier.de/pers/h/Hauswirth:Manfred>,
+        <https://dblp.uni-trier.de/pers/h/Hayes:Patrick_J=>,
+        <https://dblp.uni-trier.de/pers/h/H=eacute=liot:Rodolphe>,
+        <https://dblp.uni-trier.de/pers/h/Herman:Ivan>,
+        <https://dblp.uni-trier.de/pers/h/Hession:P=>,
+        <https://dblp.uni-trier.de/pers/h/Hitzler:Pascal>,
+        <https://dblp.uni-trier.de/pers/h/Hoekstra:Rinke>,
+        <https://dblp.uni-trier.de/pers/h/Hogan:Aidan>,
+        <https://dblp.uni-trier.de/pers/h/Homola:Martin>,
+        <https://dblp.uni-trier.de/pers/h/Hormozi:Niousha>,
+        <https://dblp.uni-trier.de/pers/h/Hruschka_Jr=:Estevam_R=>,
+        <https://dblp.uni-trier.de/pers/h/Hyland=Wood:David>,
+        <https://dblp.uni-trier.de/pers/i/Idehen:Kingsley>,
+        <https://dblp.uni-trier.de/pers/j/Jain:Nishant>,
+        <https://dblp.uni-trier.de/pers/j/Jankowski:Jacek>,
+        <https://dblp.uni-trier.de/pers/j/Jennings:Brendan>,
+        <https://dblp.uni-trier.de/pers/j/Jha:Alokkumar>,
+        <https://dblp.uni-trier.de/pers/j/Juganaru=Mathieu:Mihaela>,
+        <https://dblp.uni-trier.de/pers/j/Jung:Jason_J=>,
+        <https://dblp.uni-trier.de/pers/k/Kacprzak:Emilia>,
+        <https://dblp.uni-trier.de/pers/k/Kaffee:Lucie=Aim=eacute=e>,
+        <https://dblp.uni-trier.de/pers/k/Kammoun:Abderrahmen>,
+        <https://dblp.uni-trier.de/pers/k/Kastrinakis:George>,
+        <https://dblp.uni-trier.de/pers/k/Kem:Oudom>,
+        <https://dblp.uni-trier.de/pers/k/Khan:Yasar>,
+        <https://dblp.uni-trier.de/pers/k/Kirrane:Sabrina>,
+        <https://dblp.uni-trier.de/pers/k/Klai:Sihem>,
+        <https://dblp.uni-trier.de/pers/k/Knuth:Magnus>,
+        <https://dblp.uni-trier.de/pers/k/Koesten:Laura>,
+        <https://dblp.uni-trier.de/pers/k/Koubarakis:Manolis>,
+        <https://dblp.uni-trier.de/pers/k/Kr=ouml=tzsch:Markus>,
+        <https://dblp.uni-trier.de/pers/k/Krennwallner:Thomas>,
+        <https://dblp.uni-trier.de/pers/k/Kumar:Ashwini_Jaya>,
+        <https://dblp.uni-trier.de/pers/k/Kutz:Oliver>,
+        <https://dblp.uni-trier.de/pers/l/L=eacute=cu=eacute=:Freddy>,
+        <https://dblp.uni-trier.de/pers/l/Laborie:S=eacute=bastien>,
+        <https://dblp.uni-trier.de/pers/l/Laforest:Fr=eacute=d=eacute=rique>,
+        <https://dblp.uni-trier.de/pers/l/Lamolle:Myriam>,
+        <https://dblp.uni-trier.de/pers/l/Lange:Christoph>,
+        <https://dblp.uni-trier.de/pers/l/Lardon:J=eacute=r=eacute=my>,
+        <https://dblp.uni-trier.de/pers/l/Laya=iuml=da:Nabil>,
+        <https://dblp.uni-trier.de/pers/l/Lee:Deirdre>,
+        <https://dblp.uni-trier.de/pers/l/Lefran=ccedil=ois:Maxime>,
+        <https://dblp.uni-trier.de/pers/l/Letierce:Julie>,
+        <https://dblp.uni-trier.de/pers/l/Lh=eacute=risson:Pierre=Ren=eacute=>,
+        <https://dblp.uni-trier.de/pers/l/Lopes_0002:Nuno>,
+        <https://dblp.uni-trier.de/pers/l/Lu:Chun>,
+        <https://dblp.uni-trier.de/pers/l/Luggen:Michael>,
+        <https://dblp.uni-trier.de/pers/l/Luk=aacute=csy:Gergely>,
+        <https://dblp.uni-trier.de/pers/l/Lytra:Ioanna>,
+        <https://dblp.uni-trier.de/pers/m/Mayer:Simon>,
+        <https://dblp.uni-trier.de/pers/m/Medini:Khaled>,
+        <https://dblp.uni-trier.de/pers/m/Melo:Gerard_de>,
+        <https://dblp.uni-trier.de/pers/m/Mileo:Alessandra>,
+        <https://dblp.uni-trier.de/pers/m/Milikic:Nikola>,
+        <https://dblp.uni-trier.de/pers/m/Mochol:Malgorzata>,
+        <https://dblp.uni-trier.de/pers/m/Monaghan:Fergal>,
+        <https://dblp.uni-trier.de/pers/m/Monnin:Alexandre>,
+        <https://dblp.uni-trier.de/pers/m/Morvant:Emilie>,
+        <https://dblp.uni-trier.de/pers/m/Mrissa:Michael>,
+        <https://dblp.uni-trier.de/pers/m/Mualla:Yazan>,
+        <https://dblp.uni-trier.de/pers/n/Nagellen:Pierre>,
+        <https://dblp.uni-trier.de/pers/n/Nasirifard:Peyman>,
+        <https://dblp.uni-trier.de/pers/n/Navigli:Roberto>,
+        <https://dblp.uni-trier.de/pers/n/Nesme:Matthieu>,
+        <https://dblp.uni-trier.de/pers/n/Neumaier:Sebastian>,
+        <https://dblp.uni-trier.de/pers/n/Ngomo:Axel=Cyrille_Ngonga>,
+        <https://dblp.uni-trier.de/pers/n/Noulard:Eric>,
+        <https://dblp.uni-trier.de/pers/o/Obermeier:Philipp>,
+        <https://dblp.uni-trier.de/pers/p/Parreira:Josiane_Xavier>,
+        <https://dblp.uni-trier.de/pers/p/Passant:Alexandre>,
+        <https://dblp.uni-trier.de/pers/p/Paulus:Fran=ccedil=ois>,
+        <https://dblp.uni-trier.de/pers/p/Petersen:Niklas>,
+        <https://dblp.uni-trier.de/pers/p/Petit:Jean=Marc>,
+        <https://dblp.uni-trier.de/pers/p/Picard:Gauthier>,
+        <https://dblp.uni-trier.de/pers/p/Pierson:J=eacute=r=ocirc=me>,
+        <https://dblp.uni-trier.de/pers/p/Pinto:Tiago>,
+        <https://dblp.uni-trier.de/pers/p/Piscopo:Alessandro>,
+        <https://dblp.uni-trier.de/pers/p/Podobnik:Vedran>,
+        <https://dblp.uni-trier.de/pers/p/Polleres:Axel>,
+        <https://dblp.uni-trier.de/pers/p/Porwol:Lukasz>,
+        <https://dblp.uni-trier.de/pers/p/Punjani:Dharmen>,
+        <https://dblp.uni-trier.de/pers/q/Qawasmeh:Omar>,
+        <https://dblp.uni-trier.de/pers/q/Qi:Guilin>,
+        <https://dblp.uni-trier.de/pers/r/Raghuveer:Aravindan>,
+        <https://dblp.uni-trier.de/pers/r/Raimond:Yves>,
+        <https://dblp.uni-trier.de/pers/r/Rashid:Sabbir_M=>,
+        <https://dblp.uni-trier.de/pers/r/Ray:Pascal>,
+        <https://dblp.uni-trier.de/pers/r/Raynaud:Tanguy>,
+        <https://dblp.uni-trier.de/pers/r/Rebholz=Schuhmann:Dietrich>,
+        <https://dblp.uni-trier.de/pers/r/Ricci:Alessandro>,
+        <https://dblp.uni-trier.de/pers/r/Rocher:Pierre=Olivier>,
+        <https://dblp.uni-trier.de/pers/r/Roxin:Ana>,
+        <https://dblp.uni-trier.de/pers/r/Rudolph:Sebastian>,
+        <https://dblp.uni-trier.de/pers/r/Rula:Anisa>,
+        <https://dblp.uni-trier.de/pers/s/Sabou:Marta>,
+        <https://dblp.uni-trier.de/pers/s/Sack:Harald>,
+        <https://dblp.uni-trier.de/pers/s/Sahay:Ratnesh>,
+        <https://dblp.uni-trier.de/pers/s/Salagnac:Guillaume>,
+        <https://dblp.uni-trier.de/pers/s/Samper:Ludovic>,
+        <https://dblp.uni-trier.de/pers/s/Santos:C=aacute=ssia_Trojahn_dos>,
+        <https://dblp.uni-trier.de/pers/s/Sauvaget:Catherine>,
+        <https://dblp.uni-trier.de/pers/s/Scerri:Simon>,
+        <https://dblp.uni-trier.de/pers/s/Scharffe:Fran=ccedil=ois>,
+        <https://dblp.uni-trier.de/pers/s/Scherrer:Benoit>,
+        <https://dblp.uni-trier.de/pers/s/Schneider:Jodi>,
+        <https://dblp.uni-trier.de/pers/s/Sequeda:Juan>,
+        <https://dblp.uni-trier.de/pers/s/Serafini:Luciano>,
+        <https://dblp.uni-trier.de/pers/s/Shekarpour:Saeedeh>,
+        <https://dblp.uni-trier.de/pers/s/Sheth:Amit_P=>,
+        <https://dblp.uni-trier.de/pers/s/Shvaiko:Pavel>,
+        <https://dblp.uni-trier.de/pers/s/Simperl:Elena_Paslaru_Bontas>,
+        <https://dblp.uni-trier.de/pers/s/Singh:Kamal_Deep>,
+        <https://dblp.uni-trier.de/pers/s/Singh:Kamal>,
+        <https://dblp.uni-trier.de/pers/s/Singh:Kuldeep>,
+        <https://dblp.uni-trier.de/pers/s/Sorici:Alexandru>,
+        <https://dblp.uni-trier.de/pers/s/Staab:Steffen>,
+        <https://dblp.uni-trier.de/pers/s/Stan:Johann>,
+        <https://dblp.uni-trier.de/pers/s/Stankovic:Milan>,
+        <https://dblp.uni-trier.de/pers/s/Story:Henry>,
+        <https://dblp.uni-trier.de/pers/s/Straccia:Umberto>,
+        <https://dblp.uni-trier.de/pers/s/Subercaze:Julien>,
+        <https://dblp.uni-trier.de/pers/s/Sure=Vetter:York>,
+        <https://dblp.uni-trier.de/pers/s/Szmeja:Pawel>,
+        <https://dblp.uni-trier.de/pers/t/Taylor:Kerry_L=>,
+        <https://dblp.uni-trier.de/pers/t/Temal:Lynda>,
+        <https://dblp.uni-trier.de/pers/t/Thakkar:Harsh>,
+        <https://dblp.uni-trier.de/pers/t/Thierry:Simon_E=_B=>,
+        <https://dblp.uni-trier.de/pers/t/Thion:Romuald>,
+        <https://dblp.uni-trier.de/pers/t/Tramp:Sebastian>,
+        <https://dblp.uni-trier.de/pers/t/Troncy:Rapha=euml=l>,
+        <https://dblp.uni-trier.de/pers/u/Umbrich:J=uuml=rgen>,
+        <https://dblp.uni-trier.de/pers/v/Vahdati:Sahar>,
+        <https://dblp.uni-trier.de/pers/v/Vandenbussche:Pierre=Yves>,
+        <https://dblp.uni-trier.de/pers/v/Verborgh:Ruben>,
+        <https://dblp.uni-trier.de/pers/v/Villata:Serena>,
+        <https://dblp.uni-trier.de/pers/v/Villaz=oacute=n=Terrazas:Boris>,
+        <https://dblp.uni-trier.de/pers/v/V=ouml=lker:Johanna>,
+        <https://dblp.uni-trier.de/pers/v/Vougiouklis:Pavlos>,
+        <https://dblp.uni-trier.de/pers/v/Vouros:George>,
+        <https://dblp.uni-trier.de/pers/v/Vrandecic:Denny>,
+        <https://dblp.uni-trier.de/pers/v/Vu:Trung=Dung>,
+        <https://dblp.uni-trier.de/pers/v/Vuillemot:Romain>,
+        <https://dblp.uni-trier.de/pers/v/Wicaksono:Hendro>,
+        <https://dblp.uni-trier.de/pers/w/Willner:Alexander>,
+        <https://dblp.uni-trier.de/pers/w/Wunner:Tobias>,
+        <https://dblp.uni-trier.de/pers/w/Wylot:Marcin>,
+        <https://dblp.uni-trier.de/pers/y/Yaich:Reda>,
+        <https://dblp.uni-trier.de/pers/z/Zablith:Fouad>,
+        <https://dblp.uni-trier.de/pers/z/Zadeh:Behrang_Q=>,
+        <https://dblp.uni-trier.de/pers/z/Zarafin:Alexandra=Madalina>,
+        <https://dblp.uni-trier.de/pers/z/Zaremba:Maciej>,
+        <https://dblp.uni-trier.de/pers/z/Zarko:Ivana_Podnar>,
+        <https://dblp.uni-trier.de/pers/z/Zaveri:Amrapali>,
+        <http://champin.net/#pa>,
+        viaf:7435798,
+        viaf:26468688,
+        viaf:32330646,
+        viaf:89840212,
+        viaf:188642252,
+        viaf:196188574,
+        viaf:202017209,
+        viaf:203177766,
+        viaf:209984156,
+        viaf:214348511,
+        viaf:232201369,
+        viaf:316668050,
+        viaf:316760443,
+        viaf:7150262787005722536,
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/p/3/000/1c9/2bb/1683898.jpg>;
+          foaf:name "Omar Alkaly";
+          rdfs:comment "IngÃ©nieur projet chez Sagem"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/005/081/19f/28bed27.jpg>;
+          foaf:name "Vincent Angeloni";
+          rdfs:comment "Manager Informatique, Gestion des Ressources Humaines au CHU de Nancy"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAArRAAAAJGY2MWE5YWI4LTA5MWQtNDFlOS1iMmY3LWZjN2Y4ZjcyNWIwMA.jpg>;
+          foaf:name "Christopher Aparacio";
+          rdfs:comment "Computer Science Student at INSA - Seeking a challenging Internship in IoT and Cloud Computing"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/AAEAAQAAAAAAAAkuAAAAJGU3NjFiZmU3LWY5YzYtNDY0Zi1hY2MyLTc3YTA1NzA2ZjU1Ng.jpg>;
+          foaf:name "Ugo Aubry";
+          rdfs:comment "Data Scientist at LDLC"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAENAAAAJGUwM2Q5MjNhLWNlZmQtNGYzYy05NDJhLTQxZDBmOTQ5MmRmMw.jpg>;
+          foaf:name "Moncef Ben Rajeb";
+          rdfs:comment "Stagiaire Ã  l'Ã‰cole Nationale SupÃ©rieure des Mines de Saint-Ã‰tienne"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/p/1/000/129/0ae/2a45aad.jpg>;
+          foaf:name "Philippe Bourguignon";
+          rdfs:comment "Senior project manager at Engie Lab"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAp3AAAAJDQ1NWU4NTQ3LTU2ODctNDE0OC1hZmUwLTRiYWE3ZDdjYzFhOQ.jpg>;
+          foaf:name "Antoine Boutet";
+          rdfs:comment "AssociÃ© Ã  atrioom"@fr ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4D03AQG1xaKxyar4SQ/profile-displayphoto-shrink_800_800/0?e=1532563200&v=beta&t=HPIXfsGMb2S_HPsmYWnm1zZvignVFPYFDXqzqXPuhS4>;
+          foaf:name "Anne Boutry";
+          rdfs:comment "Avec Intermines dÃ©velopper son rÃ©seau, piloter son parcours, cultiver ses talents, garder le lien Ã  l'international"@fr ],
+        [ foaf:img <https://media.licdn.com/dms/image/C5603AQEZpTPqbUPwoA/profile-displayphoto-shrink_800_800/0?e=1559779200&v=beta&t=pZQMYHzJfbgCWqbEJ51r9_p_E83y-JB5xFwlMlPc1ro>;
+          foaf:name "Guillaume Bourriot";
+          rdfs:comment "IngÃ©nieur - Gestion de production, transition industrielle"@fr ],
+        [ foaf:name "Laurent Bovagne";
+          rdfs:comment "Documentaliste Ã  l'IUT2 de Grenoble"@fr ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQHXUkdl_zallg/profile-displayphoto-shrink_800_800/0?e=1559779200&v=beta&t=M135BAeVLEudX_tY9RJEdRvHwkOQJ5gqgdjDU6JycAk>;
+          foaf:name "Nicolas Bus";
+          rdfs:comment "IT SENIOR PROJECT MANAGER at CSTB"@en ],
+        [ foaf:img <https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_60x60_v1.png>;
+          foaf:name "CÃ©cile Caitucoli";
+          rdfs:comment "Auteur de la piÃ¨ce de thÃ©Ã¢tre \"Des femmes\" at Compagnie Encorps"@fr ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQHfIghoe_qmDw/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=InRJeUsBJqKJN9d5hVlUMKQ3QSVanUdbHHCIA1llrVU>;
+          foaf:name "Florian Cavellini";
+          rdfs:comment "Executive Director at IHS Markit"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/005/027/17c/0048f6a.jpg>;
+          foaf:name "Guido Cecilio";
+          rdfs:comment "Senior Developer & Solutions Architect at Propylon"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAg8AAAAJDFmM2IwYjgyLWJkOTgtNGE1Ny05YzJiLTY1NzgzNTZlM2I4Ng.jpg>;
+          foaf:name "Julien Chambrillon";
+          rdfs:comment "Expert \"Big Data & Analytics\" chez Keyrus"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAZ4AAAAJDljYjZjZjY1LWZhYmItNGZlNC1iNDMwLTJmMzgwYjA5NmM2MA.jpg>;
+          foaf:name "Ugo Chemlal";
+          rdfs:comment "Fleet upgrade project engineer at Talys"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/p/7/000/23d/34b/2275cd7.jpg>;
+          foaf:name "Tahar Cherif";
+          rdfs:comment "Innovation & Partnership at IMT"@en ],
+        [ foaf:img <https://media-exp2.licdn.com/media/p/2/005/045/24c/0fb7dac.jpg>;
+          foaf:name "CÃ©dric Claquin";
+          rdfs:comment "Directeur-gÃ©nÃ©ral adjoint 1D LAB"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAvcAAAAJGFlM2YxYTkzLTcxYzktNGMzZC05ZmE1LWZkY2Q4NWEwNWQxZQ.jpg>;
+          foaf:name "Gaetan Constant";
+          rdfs:comment "Consultant Data Scientist chez Datalyo"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C5103AQF9cGBxBOEfyg/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=B2NCqpNxxeTRUjgwpGBeqt2zOSwkaJuzmiU855mUzbE>;
+          foaf:name "Alaa Daoud";
+          rdfs:comment "Ph.D. Candidate at Ã‰cole des Mines de Saint-Ã‰tienne"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQF1o4fGXnYxrQ/profile-displayphoto-shrink_800_800/0?e=1565222400&v=beta&t=VyofbAJvZokDlRbFYfX_pdx9qhlMh2zf6oMG8Y9Yqz0>;
+          foaf:name "Philippe David";
+          rdfs:comment "associate partner - Sciences Computers Consultants : SCC"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C5603AQFKAjnAOJyPNw/profile-displayphoto-shrink_800_800/0?e=1532563200&v=beta&t=KiqyjynlzTKzVj3fnoIk5Iy3zpzounz82awlp0NiVwY>;
+          foaf:name "Julien Dorgere";
+          rdfs:comment "Super8 Film Specialist - Director at Super8 Productions & Super8 Shot Film Festival"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAOKAAAAJDMzMGZmYTYyLWNhNzUtNDFlZC1iYTgyLTNjMjMyNjliNjdiNw.jpg>;
+          foaf:name "Laurent Flory";
+          rdfs:comment "Chief Information Officer at UniversitÃ© de Lyon"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/p/1/000/11f/0d6/02c8989.jpg>;
+          foaf:name "Eric Franzon";
+          rdfs:comment "Managing Partner at SemanticFuse"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQFQNO3LIEizzg/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=X06oVYuQvt7WsnDVQP4zCvtjL5aN6MLelky1ob6poxI>;
+          foaf:name "David Gal-Regniez";
+          rdfs:comment "R&D Manager at Minalogic"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/000/136/169/15880eb.jpg>;
+          foaf:name "Andrew Gallagher";
+          rdfs:comment "Senior Infrastructure Consultant at Ward Solutions"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQEZfRHI8VQqHw/profile-displayphoto-shrink_800_800/0?e=1532563200&v=beta&t=aokuQ_GdImvxNH5EBz3hL-6PqrsrYV_S0H1Ca-s7owU>;
+          foaf:name "Pierre Gourseaud";
+          rdfs:comment "Data Scientist & Big Data Engineer chez Tradelab Programmatic Platform"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUGAAAAJGJjZWZhZTNmLWMxMTAtNGM0MC04MmYxLWVkMzAwODE5MDM2MQ.jpg>;
+          foaf:name "Ghislain Gressard";
+          rdfs:comment "Software Engineer at Mentor Graphics"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQFGfh_XhknWGA/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=NuPcyvBsJQsTXoFqIq769cMGpaWqL_jcQDw-o5htUN4>;
+          foaf:name "Ali Haidar";
+          rdfs:comment "Master's Student at University Jean Monnet,France"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAKVAAAAJDRjZDUyYmYyLTIxNTUtNGJhNy1hN2RhLTY2YTZlM2QyMDMwYw.jpg>;
+          foaf:name "Mikael Lautret-Staub";
+          rdfs:comment "Co Founder - IT Development Manager - Salesman at Start-Up"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAh2AAAAJGE0Y2M2ZWRkLTE1Y2ItNGFhZS04ZTg0LTU1OTJkNDQ3NTZkNA.jpg>;
+          foaf:name "MaÃ«l Lavault";
+          rdfs:comment "Software Engineer"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/062/106/1c47995.jpg>;
+          foaf:name "Laurent Le Breton";
+          rdfs:comment "Platform Director at ForCity"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAioAAAAJGQ0MDVkMDMyLTQ2MDctNGZiZi1hZDIwLTc2ZDM2ODViYTUwYg.jpg>;
+          foaf:name "Thibault Lejaille";
+          rdfs:comment "Trainee Consultant in Big Data Analytics"@en ],
+        [ foaf:name "Christophe Masson";
+          rdfs:comment "Technical lead at Bank of Aerica Merril Lynch"@en ],
+        [ foaf:img <https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_60x60_v1.png>;
+          foaf:name "Nicolas Maucotel";
+          rdfs:comment "Consultant webmarketing chez Schneider Electric"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/p/4/000/16a/314/3d955ae.jpg>;
+          foaf:name "Corinne Nikolic";
+          rdfs:comment "Opticienne DiplÃ´mÃ©e - Prestataire freelance chez Services en Vue"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/p/1/000/005/206/0df4131.jpg>;
+          foaf:name "RÃ©mi Pecqueur";
+          rdfs:comment "CEO at Softgrids"@en ],
+        [ foaf:name "Marie Peyclet";
+          rdfs:comment "La cause est dans le futur"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/081/2db/3807d45.jpg>;
+          foaf:name "Florian Proch";
+          rdfs:comment "IngÃ©nieur Developpeur Senior chez Logidoc-Solutions"@fr ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrinknp_300_300/p/1/005/03e/252/103119f.jpg>;
+          foaf:name "Thomas Renaudin";
+          rdfs:comment "Technical support, application specialist at OMICRON electronics"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAOKAAAAJDNiNjRkNjAyLWQzMzgtNGNjNS1iZmIxLTFjNWYzNTlmMDY3ZA.jpg>;
+          foaf:name "Ana JoÃ£o Serrenho";
+          rdfs:comment "Technology Platforms & Resources Manager at University College Dublin - UCD Earth Institute"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/shrink_200_200/p/4/005/0a3/3e1/06cb028.jpg>;
+          foaf:name "Arun Sharma";
+          rdfs:comment "Investment Banking at Bank of America Merrill Lynch"@en ],
+        [ foaf:img <https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAmQAAAAJGFiODI2ZTE5LTlkMDUtNDcyNC05ODg4LTdlMGUxNzQ4ODI0NA.jpg>;
+          foaf:name "Philippe Trin";
+          rdfs:comment "Financial Engineer at Capital Fund Management (CFM)"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C5603AQF5b7MOpifsNQ/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=ro6iy0ukaiQZqIfjsbgLTarvYJUIPZyR2iWDDtO2zKM>;
+          foaf:name "Bilel Terra";
+          rdfs:comment "Engineering Projects Manager - Industry 4.0"@en ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4D03AQGANOxOOYpvMA/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=4e0pBQ2LwvxPU3ojBdl7v6Jocwcllk8TPdg69_w1T9w>;
+          foaf:name "Joseph ThÃ©ry";
+          rdfs:comment "Consultant en informatique chez auticonsult France"@fr ],
+        [ foaf:img <https://media.licdn.com/dms/image/C4E03AQG3jXSout1ugA/profile-displayphoto-shrink_800_800/0?e=1565222400&v=beta&t=Mj7llR9pH5Ql1Z2MYJnyESsYDZuT-wjUlrTFl7DutKU>;
+          foaf:name "Patrick Varenne";
+          rdfs:comment "Consultant en digitalisation, management crÃ©ateur de performance."@fr ],
+        [ foaf:img <https://media-exp2.licdn.com/media/p/8/000/1ea/3ef/1a72114.jpg>;
+          foaf:name "Chris Yukna";
+          rdfs:comment "English Teacher at Ecole des Mines Saint-Etienne"@en ],
+        [ foaf:name "Yassine Zouakia";
+          rdfs:comment "IngÃ©nieur Ã©tude et dÃ©veloppement / Consultant Data Scientist chez Datalyo - Data Driven Consulting"@en ] ;
+    swc:holdsRole
+        me:jws-editorial-board,
+        me:at-steering-committee,
+        me:womocoe2019-chair,
+        me:ijcai2019-pc-member,
+        me:eswc2019-pc-member,
+        me:www2019-demo-track,
+        me:hyperagent2019-pc-member,
+        me:awd2019-pc-member,
+        me:womocoe2018-chair,
+        me:proposal-to-host-iswc2020,
+        me:ckg2018-presenter1,
+        me:ckg2018-presenter2,
+        me:ckg2018-presenter3,
+        me:cnia-rjcia2018-session-chair,
+        me:cnia-rjcia2018-pc-member,
+        me:isi-guest-editor2018,
+        me:eswc2018-di-kg-session-chair,
+        me:eswc2018-pc-member,
+        me:www2018-industry-session-chair,
+        me:www2018-demo-track,
+        me:www2018-journal-track,
+        me:aaai2018-pc-member,
+        me:egc2018-pc-member,
+        me:peniche207-organiser,
+        me:at2017-pc-member,
+        me:tuba2017-organiser,
+        me:iswc2017-pc-member,
+        me:womocoe2017-presenter,
+        me:semantics2017-pc-member,
+        me:ijcai2017-pc-member,
+        me:eswc2017-presenter,
+        me:eswc2017-pc-member,
+        me:egc2017-pc-member,
+        me:semweb2016-presenter,
+        me:labged-invited-presenter,
+        me:ijcai2016-pc-member,
+        me:ic2016-pc-member,
+        me:ldq2016-pc-member,
+        me:semper2016-pc-member,
+        me:websci2016-pc-member,
+        me:eswc2016-pc-member,
+        me:fois2016-pc-member,
+        me:www2016-pc-member,
+        me:ci-reviewing-presenter,
+        me:ci-dataset-presenter,
+        me:at2015-pc-member,
+        me:iswc2015-senior-pc-member,
+        me:cold2015-pc-member,
+        me:linked2015-pc-member,
+        me:wiss2015-organising-committee,
+        me:iclp-dc2015-pc-member,
+        me:ic2015-pc-member,
+        me:seas-invited-presenter,
+        me:lhc-invited-presenter,
+        me:eswc2015-matching-session-chair,
+        me:eswc2015-proceedings-chair,
+        me:eswc2015-pc-member,
+        me:ldq2015-pc-member,
+        me:ledaswan2015-keynote,
+        me:www2015-pc-member,
+        me:osc-jutand-presenter,
+        me:osc-mileo-presenter,
+        me:aaai2015-pc-member,
+        me:stetienne-opendata-presenter,
+        me:iswc2014-pc-member,
+        me:cold2014-pc-member,
+        me:fois2014-pc-member,
+        me:ldq2014-pc-member,
+        me:wiss2014-organiser,
+        me:iclp-dc2014-pc-member,
+        me:ecai2014-pc-member,
+        me:jacraim2014-invited-talk,
+        me:wiss2014-intro,
+        me:osc-ihf-presenter,
+        me:jiae2014-organiser,
+        me:ic2014-pc-member,
+        me:mobility2013-pc-member,
+        me:iswc2013-pc-member,
+        me:arcoe2013-pc-member,
+        me:masts2013-pc-member,
+        me:iclp-dc2013-pc-member,
+        me:ijcai2013-pc-member,
+        me:at2013-pc-member,
+        me:numelink-lod-presenter,
+        me:knowatlod2013-presenter,
+        me:eswc2013-pc-member,
+        me:mobilcite2013-presenter,
+        me:aow2012-pc-member,
+        me:at2012-grid-presenter,
+        me:at2012-swsma-presenter,
+        me:iswc2012-pc-member,
+        me:masts2012-pc-member,
+        me:arcoe2012-pc-member,
+        me:at-video-presenter,
+        me:eswc2012-pc-member,
+        me:www2012-metadata-presenter,
+        me:www2012-metadata-chair,
+        me:icistm2012-pc-member,
+        me:loddd-presenter,
+        me:aow2011-pc-member,
+        me:iswc2011-pc-member,
+        me:emse-iscod-presenter,
+        me:masts2011-pc-member,
+        me:nextmail2011-presenter,
+        me:owled2011-pc-member,
+        me:eswc2011-pc-member,
+        me:iswsa2011-pc-member,
+        me:liris-presenter,
+        me:aow2010-pc-member,
+        me:at-paris-presenter,
+        me:abcmi2010-pc-member,
+        me:urq-chinese-presenter,
+        me:iswsa2010-pc-member,
+        me:ores2010-presenter,
+        me:womo2010-pc-member,
+        me:urq-dl3-presenter,
+        me:urq-dl2-presenter,
+        me:urq-dl1-presenter,
+        me:at-cyprus-presenter,
+        me:aow2009-pc-member,
+        me:odbase2009-presenter,
+        me:intro-to-dl,
+        me:deri-first-presenter,
+        me:liris-seminar-presenter,
+        me:phd-defense,
+        me:rr2008-presenter,
+        me:iswc2008-pc-member,
+        me:worm2008-pc-member,
+        me:smap2007-presenter,
+        me:womo2007-presenter,
+        me:dl2007-presenter,
+        me:enaction_in_arts2007-local-organising-committee,
+        me:iawi2007-presenter,
+        me:afia2007-local-organising-committee,
+        me:womo2007-pc-member,
+        me:fois2006-presenter,
+        me:iswc2006-presenter,
+        me:recife-presenter,
+        me:wi-presenter,
+        me:kweb-presenter .
+
+me:wot-wg
+    a  foaf:Project ;
+    rdfs:label "Web of Things Working Group"@en ;
+    foaf:homepage <https://www.w3.org/WoT/WG/> ;
+    foaf:seeAlso <https://www.w3.org/2016/12/wot-wg-2016.html> .
+
+me:opensensingcity
+    a  foaf:Project ;
+    rdfs:label "OpenSensingCity"@en ;
+    rdfs:comment "Fostering Usages and Uses of Open Sensor Data in Smart Cities"@en ;
+    foaf:homepage <http://opensensingcity.emse.fr/> .
+
+me:sdw-wg
+    a  foaf:Project ;
+    rdfs:label "Spatial Data on the Web Working Group"@en ;
+    foaf:homepage <https://www.w3.org/2015/spatial/wiki/Main_Page> ;
+    foaf:seeAlso <https://www.w3.org/2015/spatial/charter> .
+
+me:Vigi4Med
+    a  foaf:Project ;
+    rdfs:label "Vigi4Med"@en ;
+    rdfs:comment "Project funded by the Agence Nationale de SÃ©curitÃ© du MÃ©dicament et des produits de santÃ© (ANSM) from 2014 to 2017" ;
+    foaf:homepage <http://vigi4med.com/> .
+
+me:seas
+    a foaf:Project ;
+    rdfs:label "Smart Energy Aware Systems"@en ;
+    rdfs:comment "ITEA 2 project from 2014 to 2016"@en ;
+    foaf:homepage <https://www.the-smart-energy.com/> .
+
+me:rdf11-wg
+    a foaf:Project ;
+    rdfs:label "RDF 1.1 Working Group"@en ;
+    foaf:homepage <http://www.w3.org/2011/rdf-wg/wiki/Main_Page> ;
+    foaf:seeAlso <http://www.w3.org/2011/01/rdf-wg-charter> .
+
+me:lodsem
+    a foaf:Project ;
+    rdfs:label "Linked Open Data at Saint-Ã‰tienne MÃ©tropole"@en .
+
+me:agreement-technologies
+    a foaf:Project ;
+    rdfs:label "Agreement Technologies"@en ;
+    rdfs:comment "COST Action IC0801 on Agreement Technologies, October 2008 - October 2012."@en ;
+    foaf:homepage <http://www.agreement-technologies.eu/> .
+
+me:owl2-wg
+    a foaf:Project ;
+    rdfs:label "OWL Working Group"@en ;
+    foaf:homepage <http://www.w3.org/2007/OWL/wiki/OWL_Working_Group> ;
+    foaf:seeAlso <http://www.w3.org/2007/06/OWLCharter.html> .
+
+me:lion2
+    a foaf:Project ;
+    rdfs:label "LÃ­on 2"@en ;
+    rdfs:seeAlso <https://www.deri.ie/content/l%C3%ADon-2-1> .
+
+me:AudehBZJB17
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/a/Audeh:Bissan>,
+      <https://dblp.uni-trier.de/pers/b/Beigbeder:Michel>,
+      me:me,
+      <https://dblp.uni-trier.de/pers/p/Jaillon:Philippe>,
+      <https://dblp.uni-trier.de/pers/b/Bousquet:C=eacute=dric> ;
+    rdfs:label "Vigi4Med Scraper: A Framework for Web Forum Structured Data Extraction and Semantic Representation"@en ;
+    rdfs:comment "In PLOS ONE."@en ;
+    rdfs:seeAlso <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169658> ;
+    dc:issued "2017"^^xsd:gYear .
+
+me:KemBZ16
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/k/Kem:Oudom>,
+      <https://dblp.uni-trier.de/pers/b/Balbo:Flavien>,
+      me:me ;
+    rdfs:label "Traveler-Oriented Advanced Traveler Information System Based on Discovery and Exploitation of Resources: Potentials and Challenges"@en ;
+    rdfs:comment "In 19th EURO Working Group on Transportation Meeting, EWGT2016, 5-7 September 2016, Istanbul, Turkey."@en ;
+    dc:issued "2016"^^xsd:gYear .
+
+me:BelloniBBBBCCEGJMPRSSTVVZ14
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/b/Belloni:Aline>,
+      <https://dblp.uni-trier.de/pers/b/Berger:Alain>,
+      <https://dblp.uni-trier.de/pers/b/Boissier:Olivier>,
+      <https://dblp.uni-trier.de/pers/b/Bonnet:Gr=eacute=gory>,
+      <https://dblp.uni-trier.de/pers/b/Bourgne:Gauvain>,
+      <https://dblp.uni-trier.de/pers/b/Chardel:Pierre=Antoine>,
+      <https://dblp.uni-trier.de/pers/c/Cotton:Jean=Pierre>,
+      <https://dblp.uni-trier.de/pers/c/Evreux:Nicolas>,
+      <https://dblp.uni-trier.de/pers/g/Ganascia:Jean=Gabriel>,
+      <https://dblp.uni-trier.de/pers/j/Jaillon:Philippe>,
+      <https://dblp.uni-trier.de/pers/m/Mermet:Bruno>,
+      <https://dblp.uni-trier.de/pers/p/Picard:Gauthier>,
+      <https://dblp.uni-trier.de/pers/c/Rever:Bernard>,
+      <https://dblp.uni-trier.de/pers/s/Simon:Ga=euml=le>,
+      <https://dblp.uni-trier.de/pers/s/Swarte:Thibault_de>,
+      <https://dblp.uni-trier.de/pers/t/Tessier:Catherine>,
+      <https://dblp.uni-trier.de/pers/v/Vexler:Fran=ccedil=ois>,
+      <https://dblp.uni-trier.de/pers/v/Voyer:Robert>,
+      me:me ;
+    rdfs:label "Towards A Framework To Deal With Ethical Conflicts In Autonomous Agents And Multi-Agent Systems"@en ;
+    rdfs:comment "In the proceedings of CEPE 2014: Well-being, Flourishing, and ICTs"@en ;
+    dc:issued "2014"^^xsd:gYear .
+
+me:GillaniPLZ14
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/g/Gillani:Syed>,
+      <https://dblp.uni-trier.de/pers/p/Picard:Gauthier>,
+      <https://dblp.uni-trier.de/pers/l/Laforest:Fr=eacute=d=eacute=rique>,
+      me:me ;
+    rdfs:label "Towards Efficient Semantically Enriched Complex Event Processing and Pattern Matching (Position Paper)"@en ;
+    rdfs:comment "In the proceedings of the 3rd International Workshop on Ordering and Reasoning, October 2014"@en ;
+    dc:issued "2014"^^xsd:gYear .
+
+me:CiorteaBZF13
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/c/Ciortea:Andrei>,
+      <https://dblp.uni-trier.de/pers/b/Boissier:Olivier>,
+      me:me,
+      <https://dblp.uni-trier.de/pers/f/Florea:Adina_Magda> ;
+    rdfs:label "Adding a Social Dimension to the Web of Things"@en ;
+    rdfs:comment "Poster at SEmba 2013."@en ;
+    dc:issued "2013"^^xsd:gYear .
+
+me:SoriciBPZ13
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/s/Sorici:Alexandru>,
+      <https://dblp.uni-trier.de/pers/b/Boissier:Olivier>,
+      <https://dblp.uni-trier.de/pers/p/Picard:Gauthier>,
+      me:me ;
+    rdfs:label "Applying Semantic Web Technologies to Context Modeling in Ambient Intelligence"@en ;
+    rdfs:comment "In the proceedings of the 3rd International Workshop on Pervasive and Context-Aware Middleware (PerCAM13), then revised in Michael J. O'Grady, Hamed Vahdat-Nejad, Klaus-Hendrik Wolf, Mauro Dragone, J. Ye, Carsten RÃ¶cker, Gregory M. P. O'Hare (Eds.): Evolving Ambient Intelligence - AmI 2013 Workshops, Dublin, Ireland, December 3-5, 2013. Revised Selected Papers. Communications in Computer and Information Science Vol.413 Springer 2013, ISBN 978-3-319-04406-4_1. p217-229."@en ;
+    dc:issued "2013"^^xsd:gYear .
+
+me:SahayZFPH13
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/s/Sahay:Ratnesh>,
+      me:me,
+      <https://dblp.uni-trier.de/pers/f/Fox:Ronan>,
+      <https://dblp.uni-trier.de/pers/p/Polleres:Axel>,
+      <https://dblp.uni-trier.de/pers/h/Hauswirth:Manfred> ;
+    rdfs:label "A Formal Investigation of Semantic Interoperability of HCLS Systems"@en ;
+    rdfs:comment "In Miguel-Angel Sicilia, Pablo Serrano-Balazote (Eds.): Interoperability in Healthcare Information Systems: Standards, Management, and Technology, IGI Global, ISBN 978-1466630000. June 2013."@en ;
+    dc:issued "2013"^^xsd:gYear .
+
+me:Zimmermann12
+    a foaf:Document ;
+    dblp:authoredBy me:me ;
+    rdfs:label "Logical formalisms for Agreement Technologies"@en ;
+    rdfs:comment "In Sascha Ossowski (Ed.): Agreement Technologies, Springer, ISBN 978-94-007-5582-6. December 2012."@en ;
+    dc:issued "2012"^^xsd:gYear .
+
+me:LopesZHLPSD10
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/l/Lopes_0002:Nuno>,
+      me:me,
+      <https://dblp.uni-trier.de/pers/h/Hogan:Aidan>,
+      <https://dblp.uni-trier.de/pers/l/Luk=aacute=csy:Gergely>,
+      <https://dblp.uni-trier.de/pers/p/Polleres:Axel>,
+      <https://dblp.uni-trier.de/pers/s/Straccia:Umberto>,
+      <https://dblp.uni-trier.de/pers/d/Decker:Stefan> ;
+    rdfs:label "RDF Needs Annotations"@en ;
+    rdfs:comment "In the proceedings of RDF Next Steps, in 2010."@en ;
+    dc:issued "2010"^^xsd:gYear .
+
+me:HoganPUZ10
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/h/Hogan:Aidan>,
+      <https://dblp.uni-trier.de/pers/p/Polleres:Axel>,
+      <https://dblp.uni-trier.de/pers/u/Umbrich:J=uuml=rgen>,
+      me:me ;
+    rdfs:label "Some entities are more equal than others: statistical methods to consolidate Linked Data"@en ;
+    rdfs:comment "In the proceedings of NeFoRS 2010."@en ;
+    dc:issued "2010"^^xsd:gYear .
+
+me:Zimmermann10
+    a foaf:Document ;
+    dblp:authoredBy me:me ;
+    rdfs:label "Position paper: Ontology Recommendation for the Data Publishers"@en ;
+    rdfs:comment "In the proceedings of ORES 2010, CEUR Workshop Proceedings."@en ;
+    dc:issued "2010"^^xsd:gYear .
+
+me:BezerraFEZ09
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/b/Bezerra:Camila>,
+      <https://dblp.uni-trier.de/pers/f/Freitas:Frederico_Luiz_Gon=ccedil=alves_de>,
+      <https://dblp.uni-trier.de/pers/e/Euzenat:J=eacute=r=ocirc=me>,
+      me:me ;
+    rdfs:label "An Approach for Ontology Modularization"@en ;
+    rdfs:comment "In the proceedings of Collibri 2009."@en ;
+    dc:issued "2009"^^xsd:gYear .
+
+me:LaborieZ09
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/l/Laborie:S=eacute=bastien>,
+      me:me ;
+    rdfs:label "On Using Information Retrieval Techniques for Semantic Media Adaptation"@en ;
+    rdfs:comment "In Marios C. Angelides (Ed.): Advances in Semantic Media Adaptation and Personalization, Volume 2. Auerbach Publications, ISBN 978-1420076646. March 2009."@en ;
+    dc:issued "2007"^^xsd:gYear .
+
+me:AlkhateebZ07fr
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/a/Alkhateeb:Faisal>,
+      me:me ;
+    rdfs:label "RÃ©pondre Ã  des requÃªtes dans un systÃ¨me distribuÃ© Ã  base de connaissances"@fr ;
+    rdfs:comment "In the proceedings of IAWI 2007."@en ;
+    dc:issued "2007"^^xsd:gYear .
+
+me:AlkhateebZ07
+    a foaf:Document ;
+    dblp:authoredBy
+      <https://dblp.uni-trier.de/pers/a/Alkhateeb:Faisal>,
+      me:me ;
+    rdfs:label "Query Answering in Distributed Description Logics"@en ;
+    rdfs:comment "In the proceedings of NTMS 2007, Springer."@en ;
+    dc:issued "2007"^^xsd:gYear .
+
+me:Zimmermann04
+    a foaf:Document ;
+    dblp:authoredBy me:me ;
+    rdfs:label "Fusion de descriptions hÃ©tÃ©rogÃ¨nes en RDF"@fr ;
+    rdfs:comment "Antoine Zimmermann's Masters thesis, at UniversitÃ© Joseph Fourier, Grenoble, France."@en ;
+    dc:issued "2004"^^xsd:gYear .
+
+me:jws-editorial-board
+    a swc:Role ;
+    rdfs:label "Editorial Board member for the Journal on Web Semantics"@en .
+
+me:at-steering-committee
+    a swc:Role ;
+    rdfs:label "Steering committee member of the Agreement Technologies conference series"@en .
+
+me:cnia-rjcia2018-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at CNIA-RJCIA 2018"@en ;
+    swc:isRoleAt me:cnia-rjcia2018 .
+
+me:isi-guest-editor2018
+    a swc:Role ;
+    rdfs:label "Guest editor for the special issue of French journal IngÃ©nierie des systÃ¨mes dâ€™information on Impact des Open et/ou Linked Data dans les systÃ¨mes dâ€™information"@en .
+
+me:cnia-rjcia2018
+    a swc:ConferenceEvent ;
+    rdfs:label "CNIA-RJCIA 2018"@en ;
+    rdfs:comment "ConfÃ©rence Nationale en Intelligence Artificielle et les Rencontres des Jeunes Chercheurs en Intelligence Artificielle"@fr ;
+    swc:hasLocation dbr:Hersonissos .
+
+me:eswc2018-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2018"@en ;
+    swc:isRoleAt me:eswc2018 .
+
+me:eswc2018
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2018"@en ;
+    rdfs:comment "15th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2018.eswc-conferences.org/> ;
+    swc:hasLocation dbr:Hersonissos .
+
+me:www2018-demo-track
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member of the demo track at the Web Conference 2018"@en ;
+    swc:isRoleAt me:www2018 .
+
+me:www2018-journal-track
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member of the journal track at the Web Conference 2018"@en ;
+    swc:isRoleAt me:www2018 .
+
+me:www2018
+    a swc:ConferenceEvent ;
+    rdfs:label "The Web Conference 2018"@en ;
+    rdfs:comment "The Web Conference, 27th edition of the formerly known WWW Conference"@en ;
+    swc:hasLocation dbr:Lyon .
+
+me:aaai2018-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AAAI 2018"@en ;
+    swc:isRoleAt me:aaai2018 .
+
+me:aaai2018
+    a swc:ConferenceEvent ;
+    rdfs:label "AAAI 2018"@en ;
+    rdfs:comment "32nd AAAI Conference on Artificial Intelligence"@en ;
+    swc:hasLocation dbr:New_Orleans .
+
+me:egc2018-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at EGC 2018"@en ;
+    swc:isRoleAt me:egc2018 .
+
+me:egc2018
+    a swc:ConferenceEvent ;
+    rdfs:label "EGC 2018"@fr ;
+    rdfs:comment "18e confÃ©rence internationale sur l'expraction et la gestion des connaissances"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Denis,_Seine-Saint-Denis> .
+
+me:at2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AT 2017"@en ;
+    swc:isRoleAt me:at2017 .
+
+me:at2017
+    a swc:ConferenceEvent ;
+    rdfs:label "AT 2017"@en ;
+    rdfs:comment "5th International Conference on Agreement Technologies"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Ã‰vry,_Essonne> .
+
+me:iswc2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2017"@en ;
+    swc:isRoleAt me:iswc2017 .
+
+me:iswc2017
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2017"@en ;
+    rdfs:comment "16th International Semantic Web Conference"@en ;
+    foaf:homepage <https://iswc2017.semanticweb.org/> ;
+    swc:hasLocation dbr:Vienna .
+
+me:womocoe2017-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at WoMOCoE 2017"@en ;
+    swc:isRoleAt me:womocoe2017-talk .
+
+me:womocoe2017-talk
+    a swc:TalkEvent ;
+    rdfs:label "Contextualizing DL Axioms: Formalization, a New Approach, and Its Properties"@en ;
+    swc:isSubEventOf me:womocoe2017 .
+
+me:womocoe2017
+    a swc:WorkshopEvent ;
+    rdfs:label "WoMOCoE 2017"@en ;
+    rdfs:comment "Second International Workshop on Modular Ontologies, Context and Evolution"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Vienna> .
+
+me:semantics2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at SEMANTICS 2017"@en ;
+    swc:isRoleAt me:semantics2017 .
+
+me:semantics2017
+    a swc:ConferenceEvent ;
+    rdfs:label "SEMANTICS 2017"@en ;
+    rdfs:comment "13th International Conference on Semantic Systems"@en ;
+    foaf:homepage <https://2017.semantics.cc/> ;
+    swc:hasLocation dbr:Amsterdam .
+
+me:ijcai2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IJCAI 2017"@en ;
+    swc:isRoleAt me:ijcai2017 .
+
+me:ijcai2017
+    a swc:ConferenceEvent ;
+    rdfs:label "IJCAI 2017"@en ;
+    rdfs:comment "26th International Joint Conference on Artificial Intelligence"@en ;
+    foaf:homepage <http://ijcai-17.org/> ;
+    swc:hasLocation dbr:Melbourne .
+
+me:eswc2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2017"@en ;
+    swc:isRoleAt me:eswc2017 .
+
+me:eswc2017-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at ESWC 2017"@en ;
+    swc:isRoleAt me:eswc2017-talk .
+
+me:eswc2017-talk
+    a swc:TalkEvent ;
+    rdfs:label "A SPARQL extension for generating RDF from heterogeneous formats"@en ;
+    swc:isSubEventOf me:eswc2017 .
+
+me:eswc2017
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2017"@en ;
+    rdfs:comment "14th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2016.eswc-conferences.org/> ;
+    swc:hasLocation dbr:PortoroÅ¾ .
+
+me:egc2017-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at EGC 2017"@en ;
+    swc:isRoleAt me:egc2017 .
+
+me:egc2017
+    a swc:ConferenceEvent ;
+    rdfs:label "EGC 2017"@fr ;
+    rdfs:comment "17e confÃ©rence Extraction et Gestion des Connaissances"@fr ;
+    foaf:homepage <http://egc2017.imag.fr/> ;
+    swc:hasLocation dbr:Grenoble .
+
+me:semweb2016-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at SemWeb.pro 2016"@en ;
+    swc:isRoleAt me:semweb2016-talk .
+
+me:semweb2016-talk
+    a swc:TalkEvent ;
+    rdfs:label "PrÃ©sentation du projet ANR OpenSensingCityâ€¯: travaux rÃ©alisÃ©s et Ã  venir"@fr ;
+    swc:isSubEventOf me:semweb2016 .
+
+me:semweb2016
+    a swc:ConferenceEvent ;
+    rdfs:label "SemWeb.pro 2016"@en ;
+    foaf:homepage <http://semweb.pro/semwebpro-2016.html> ;
+    swc:hasLocation dbr:Paris .
+
+me:labged-invited-presenter
+    a swc:Presenter ;
+    rdfs:label "Invited speaker at LabGed in Annaba"@en ;
+    swc:isRoleAt me:labged-talk .
+
+me:labged-talk
+    a swc:TalkEvent ;
+    rdfs:label "Connected Intelligence & work related to the mediation principle"@en ;
+    swc:hasLocation dbr:Annaba .
+
+me:ijcai2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IJCAI 2016"@en ;
+    swc:isRoleAt me:ijcai2016 .
+
+me:ijcai2016
+    a swc:ConferenceEvent ;
+    rdfs:label "IJCAI 2016"@en ;
+    rdfs:comment "24th International Joint Conference on Artificial Intelligence"@en ;
+    foaf:homepage <http://ijcai-16.org/> ;
+    swc:hasLocation dbr:New_York_City .
+
+me:ic2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IC 2016"@en ;
+    swc:isRoleAt me:ic2016 .
+
+me:ic2016
+    a swc:ConferenceEvent ;
+    rdfs:label "IC 2016"@fr ;
+    rdfs:comment "27es JournÃ©es francophones d'IngÃ©nierie des Connaissances"@fr ;
+    foaf:homepage <https://ic2016.sciencesconf.org/> ;
+    swc:hasLocation dbr:Montpellier .
+
+me:ldq2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at LDQ 2016"@en ;
+    swc:isRoleAt me:ldq2016 .
+
+me:ldq2016
+    a swc:WorkshopEvent ;
+    rdfs:label "LDQ 2016"@en ;
+    rdfs:comment "3rd International Workshop on Linked Data Quality"@en ;
+    swc:hasLocation dbr:Hersonissos .
+
+me:semper2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at SEMPER 2016"@en ;
+    swc:isRoleAt me:semper2016 .
+
+me:semper2016
+    a swc:WorkshopEvent ;
+    rdfs:label "SEMPER 2016"@en ;
+    rdfs:comment "1st International Workshop on Semantic Web Technologies for Mobile and Pervasive Environments"@en ;
+    foaf:homepage <http://mklab.iti.gr/semper2016/> ;
+    swc:hasLocation dbr:Hersonissos .
+
+me:websci2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at Web Science 2016"@en ;
+    swc:isRoleAt me:websci2016 .
+
+me:websci2016
+    a swc:ConferenceEvent ;
+    rdfs:label "Web Science 2016"@en ;
+    rdfs:comment "8th International ACM Web Science Conference"@en ;
+    foaf:homepage <http://www.websci16.org/> ;
+    swc:hasLocation dbr:Hannover .
+
+me:eswc2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2016"@en ;
+    swc:isRoleAt me:eswc2016 .
+
+me:eswc2016
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2016"@en ;
+    rdfs:comment "13th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2016.eswc-conferences.org/> ;
+    swc:hasLocation dbr:Hersonissos .
+
+me:ci-reviewing-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at a Connected Intelligence meeting"@en ;
+    swc:isRoleAt me:ci-reviewing-talk .
+
+me:ci-reviewing-talk
+    a swc:TalkEvent ;
+    rdfs:label "Reviewing in the context of computer science research"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:fois2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at FOIS 2016"@en ;
+    swc:isRoleAt me:fois2016 .
+
+me:fois2016
+    a swc:ConferenceEvent ;
+    rdfs:label "FOIS 2016"@en ;
+    rdfs:comment "9th International Conference on Formal Ontologies in Information Systems"@en ;
+    foaf:homepage <http://www.polytech.univ-savoie.fr/index.php?id=3108> ;
+    swc:hasLocation dbr:Annecy .
+
+me:www2016-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at WWW 2016"@en ;
+    swc:isRoleAt me:www2016 .
+
+me:www2016
+    a swc:ConferenceEvent ;
+    rdfs:label "WWW 2016"@en ;
+    rdfs:comment "25th International World Wide Web Conference"@en ;
+    foaf:homepage <http://www2016.ca/> ;
+    swc:hasLocation dbr:Montreal .
+
+me:ci-dataset-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at a Connected Intelligence meeting"@en ;
+    swc:isRoleAt me:ci-dataset-talk .
+
+me:ci-dataset-talk
+    a swc:TalkEvent ;
+    rdfs:label "Understanding RDF graph and RDF dataset entailment regimes"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:at2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AT 2015"@en ;
+    swc:isRoleAt me:at2015 .
+
+me:at2015
+    a swc:ConferenceEvent ;
+    rdfs:label "AT 2015"@en ;
+    rdfs:comment "3rd International Conference on Agreement Technologies"@en ;
+    foaf:homepage <http://ai-group.ds.unipi.gr/eumas-at2015/at2015> ;
+    swc:hasLocation dbr:Athens .
+
+me:iswc2015-senior-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Senior Programme Committee member at ISWC 2015"@en ;
+    swc:isRoleAt me:iswc2015 .
+
+me:iswc2015
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2015"@en ;
+    rdfs:comment "14th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2015.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Bethlehem,_Pennsylvania> .
+
+me:cold2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at COLD 2015"@en ;
+    swc:isRoleAt me:cold2015 .
+
+me:cold2015
+    a swc:WorkshopEvent ;
+    rdfs:label "COLD 2015"@en ;
+    rdfs:comment "6th International Workshop on Consuming Linked Data"@en ;
+    foaf:homepage <https://www.dcc.uchile.cl/cold2015/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Bethlehem,_Pennsylvania> .
+
+me:linked2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at LINKED 2015"@en ;
+    swc:isRoleAt me:linked2015 .
+
+me:linked2015
+    a swc:WorkshopEvent ;
+    rdfs:label "LINKED 2015"@en ;
+    rdfs:comment "1st International Workshop on LINKed EDucation"@en ;
+    foaf:homepage <https://linked2015.wordpress.com/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Bethlehem,_Pennsylvania> .
+
+me:wiss2015-organising-committee
+    a swc:Role ;
+    rdfs:label "Member of the organising committee of WISS 2015"@en ;
+    swc:isRoleAt me:wiss2015 .
+
+me:wiss2015
+    a swc:AcademicEvent ;
+    rdfs:label "WISS 2015"@en ;
+    rdfs:comment "Web Intelligence Summer School 2015 on answering questions with the Web"@en ;
+    foaf:homepage <https://wiss.univ-st-etienne.fr/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:iclp-dc2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ICLP-DC 2015"@en ;
+    swc:isRoleAt me:iclp-dc2015 .
+
+me:iclp-dc2015
+    a swc:ConferenceEvent ;
+    rdfs:label "ICLP-DC 2015"@en ;
+    rdfs:comment "11th ICLP Doctoral Consortium"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Cork,_Ireland> .
+
+me:ic2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IC 2015"@en ;
+    swc:isRoleAt me:ic2015 .
+
+me:ic2015
+    a swc:ConferenceEvent ;
+    rdfs:label "IC 2015"@fr ;
+    rdfs:comment "26es JournÃ©es francophones d'IngÃ©nierie des Connaissances"@fr ;
+    foaf:homepage <http://pfia2015.inria.fr/conference-ic> ;
+    swc:hasLocation dbr:Rennes .
+
+me:seas-invited-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at a SEAS project meeting"@en ;
+    swc:isRoleAt me:seas-invited-talk .
+
+me:seas-invited-talk
+    a swc:TalkEvent ;
+    rdfs:label "The Semantic Web in SEAS"@en ;
+    swc:hasLocation dbr:Paris .
+
+me:lhc-invited-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the keynote he made previously at LeDA-SWaN 2015 to the laboratoire Hubert Curien"@en ;
+    swc:isRoleAt me:lhc-invited-talk .
+
+me:lhc-invited-talk
+    a swc:TalkEvent ;
+    rdfs:label "Self-regulating Semantic Web Agents"@en ;
+    swc:hasLocation dbr:Le_Chambon-sur-Lignon .
+
+me:eswc2015-matching-session-chair
+    a swc:Role ;
+    rdfs:label "Session chair at ESWC 2015 in session about ontology matching and summarization"@en ;
+    swc:isRoleAt me:eswc2015-session-om-sum .
+
+me:eswc2015-session-om-sum
+    a swc:SessionEvent ;
+    rdfs:label "Ontology matching & summarization"@en ;
+    swc:isSubEventOf me:eswc2015 .
+
+me:eswc2015-proceedings-chair
+    a swc:Role ;
+    rdfs:label "Proceedings chair at ESWC 2015"@en ;
+    swc:isRoleAt me:eswc2015 .
+
+me:eswc2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2015"@en ;
+    swc:isRoleAt me:eswc2015 .
+
+me:eswc2015
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2015"@en ;
+    rdfs:comment "12th Extended Semantic Web Conference"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/PortoroÅ¾> .
+
+me:ldq2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2015"@en ;
+    swc:isRoleAt me:ldq2015 .
+
+me:ldq2015
+    a swc:WorkshopEvent ;
+    rdfs:label "LDQ 2015"@en ;
+    rdfs:comment "2nd Workshop on Linked Data Quality"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/PortoroÅ¾> .
+
+me:ledaswan2015-keynote
+    a swc:Presenter ;
+    rdfs:label "Keynote speaker at LeDA-SWAN 2015"@en ;
+    swc:isRoleAt me:ledaswan2015-talk .
+
+me:ledaswan2015-talk
+    a swc:TalkEvent ;
+    rdfs:label "Self-regulating Semantic Web Agents"@en ;
+    swc:isSubEventOf me:ledaswan2015 .
+
+me:ledaswan2015
+    a swc:WorkshopEvent ;
+    rdfs:label "LeDA-SWAN 2015"@en ;
+    rdfs:comment "Workshop on the Legal Domain and the Semantic Web"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/PortoroÅ¾> .
+
+me:www2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at WWW 2015"@en ;
+    swc:isRoleAt me:www2015 .
+
+me:www2015
+    a swc:ConferenceEvent ;
+    rdfs:label "WWW 2015"@en ;
+    rdfs:comment "24th International World Wide Web Conference"@en ;
+    foaf:homepage <http://www.www2015.it/> ;
+    swc:hasLocation dbr:Florence .
+
+me:osc-jutand-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of project OpenSensingCity to Francis Jutand, deputy executive director of Institut Mines-TÃ©lÃ©com"@en ;
+    swc:isRoleAt me:osc-jutand-talk .
+
+<https://dblp.uni-trier.de/pers/j/Jutand:Francis>
+    swc:holdsRole me:jutand-attendee .
+
+me:jutand-attendee
+    a swc:Delegate ;
+    rdfs:label "Francis Jutand visited Ã©cole des mines de Saint-Ã‰tienne and attended the talk by Flavien Balbo and Antoine Zimmermann"@en ;
+    swc:isRoleAt me:osc-jutand-talk .
+
+me:osc-jutand-talk
+    a swc:TalkEvent ;
+    rdfs:label "Traitement de donnÃ©es complexes urbaines"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:osc-mileo-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of project OpenSensingCity to Alessandra Mileo, team leader at Insight NUI Galway"@en ;
+    swc:isRoleAt me:osc-mileo-talk .
+
+<https://dblp.uni-trier.de/pers/m/Mileo:Alessandra>
+    a swc:Delegate ;
+    rdfs:label "Alessandra visited team Connected Intelligence and attended the presentation of OpenSensingCity by Antoine Zimmermann"@en ;
+    swc:isRoleAt me:osc-mileo-talk .
+
+me:osc-mileo-talk
+    a swc:TalkEvent ;
+    rdfs:label "OpenSensingCity: Fostering Uses and Usages of Open Sensor Data in Smart Cities"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:aaai2015-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member in the AI and the Web track at AAAI 2015"@en ;
+    swc:isRoleAt me:aaai2015 .
+
+me:aaai2015
+    a swc:ConferenceEvent ;
+    rdfs:label "AAAI 2015"@en ;
+    rdfs:comment "29th AAAI Conference on Artificial Intelligence"@en ;
+    foaf:homepage <http://www.aaai.org/Conferences/AAAI/aaai15.php> ;
+    swc:hasLocation <http://dbpedia.org/resource/Austin,_Texas> .
+
+me:stetienne-opendata-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the Linked Data principles at a meeting organised by NumÃ©link"@en ;
+    swc:isRoleAt me:stetienne-opendata-talk .
+
+<https://dblp.uni-trier.de/pers/g/Gravier:Christophe>
+    swc:holdsRole me:gravier-attendee .
+
+me:gravier-attendee
+    a swc:Delegate ;
+    rdfs:label "Christophe Gravier presented some facts about open data at a meeting organised by NumÃ©link"@en ;
+    swc:isRoleAt me:stetienne-opendata-talk .
+
+me:stetienne-opendata-talk
+    a swc:TalkEvent ;
+    rdfs:label "Open Data? Linked Open Data?"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:jacraim2014-invited-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at the CRAIM days"@en ;
+    swc:isRoleAt me:jacraim2014-invited-talk .
+
+me:jacraim2014-invited-talk
+    a swc:TalkEvent ;
+    rdfs:label "Le Web (sÃ©mantique) pour l'interopÃ©rabilitÃ© des systÃ¨mes d'information de santÃ©"@fr ;
+    swc:isSubEventOf swc:craim2014 .
+
+me:craim2014
+    a swc:ConferenceEvent ;
+    rdfs:label "JournÃ©es annuelles du CRAIM"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:iswc2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2014"@en ;
+    swc:isRoleAt me:iswc2014 .
+
+me:iswc2014
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2014"@en ;
+    rdfs:comment "12th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2014.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Riva_del_Garda> .
+
+me:cold2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at COLD 2014"@en ;
+    swc:isRoleAt me:cold2014 .
+
+me:cold2014
+    a swc:WorkshopEvent ;
+    rdfs:label "COLD 2014"@en ;
+    rdfs:comment "5th International Workshop on Consuming Linked Data"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Riva_del_Garda> .
+
+me:jiae2014-organiser
+    a swc:Role ;
+    rdfs:label "Organiser of JIAE 2014"@en ;
+    swc:isRoleAt me:jiae2014 .
+
+me:jiae2014
+    a swc:AcademicEvent ;
+    rdfs:label "JIAE 2014"@fr ;
+    rdfs:comment "SeptiÃ¨me journÃ©es de l'interopÃ©rabilitÃ© des applications d'entreprises"@fr ;
+    foaf:homepage <http://jiae2014.emse.fr/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:wiss2014-organiser
+    a swc:Role ;
+    rdfs:label "Organiser of WISS 2014"@en ;
+    swc:isRoleAt me:wiss2014 .
+
+me:wiss2014-intro
+    a swc:Presenter ;
+    rdfs:label "Presenter at the Web Intelligence Summer School on the Web of Data"@en ;
+    swc:isRoleAt me:wiss2014-talk .
+
+me:wiss2014-talk
+    a swc:TalkEvent ;
+    rdfs:label "Web Intelligence Summer School \"Web of Data\" (WISS 2014)"@en ;
+    swc:isSubEventOf me:wiss2014 .
+
+me:wiss2014
+    a swc:AcademicEvent ;
+    rdfs:label "WISS 2014"@en ;
+    rdfs:comment "Web Intelligence Summer School 2014 on the Web of Data"@en ;
+    foaf:homepage <http://www.emse.fr/~zimmermann/WI_2014_Site/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:fois2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at FOIS 2014"@en ;
+    swc:isRoleAt me:fois2014 .
+
+me:fois2014
+    a swc:ConferenceEvent ;
+    rdfs:label "FOIS 2014"@en ;
+    rdfs:comment "8th International Conference on Formal Ontology in Information Systems"@en ;
+    foaf:homepage <http://fois2014.inf.ufes.br/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Roi_de_Janeiro> .
+
+me:osc-ihf-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of project OpenSensingCity in Institut Henri Fayol"@en ;
+    swc:isRoleAt me:osc-ihf-talk .
+
+me:osc-ihf-talk
+    a swc:TalkEvent ;
+    rdfs:label "OpenSensingCity"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:ldq2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at LDQ 2014"@en ;
+    swc:isRoleAt me:ldq2014 .
+
+me:ldq2014
+    a swc:WorkshopEvent ;
+    rdfs:label "LDQ 2014"@en ;
+    rdfs:comment "1st Workshop on Linked Data Quality"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Leipzig> .
+
+me:iclp-dc2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ICLP-DC 2014"@en ;
+    swc:isRoleAt me:iclp-dc2014 .
+
+me:iclp-dc2014
+    a swc:ConferenceEvent ;
+    rdfs:label "ICLP-DC 2014"@en ;
+    rdfs:comment "International Conference on Logic Programming Doctoral Consortium 2014"@en ;
+    foaf:homepage <https://sites.google.com/site/iclpdc14/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Vienna> .
+
+me:ecai2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ECAI 2014"@en ;
+    swc:isRoleAt me:ecai2014 .
+
+me:ecai2014
+    a swc:ConferenceEvent ;
+    rdfs:label "ECAI 2014"@en ;
+    rdfs:comment "21st European Conference on Artificial Intelligence"@en ;
+    foaf:homepage <http://www.ecai2014.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Prague> .
+
+me:eswc2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2014"@en ;
+    swc:isRoleAt me:eswc2014 .
+
+me:eswc2014
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2014"@en ;
+    rdfs:comment "11th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2014.eswc-conferences.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Hersonissos> .
+
+me:ic2014-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IC 2014"@en ;
+    swc:isRoleAt me:ic2014 .
+
+me:ic2014
+    a swc:ConferenceEvent ;
+    rdfs:label "IC 2014"@fr ;
+    rdfs:comment "25es JournÃ©es francophones d'IngÃ©nierie des Connaissances"@fr ;
+    foaf:homepage <http://www.irit.fr/IC2014> ;
+    swc:hasLocation <http://dbpedia.org/resource/Clermont-Ferrand> .
+
+me:mobility2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at Mobility 2013"@en ;
+    swc:isRoleAt me:mobility2013 .
+
+me:mobility2013
+    a swc:ConferenceEvent ;
+    rdfs:label "MOBILITY 2013"@en ;
+    rdfs:comment "3rd International Conference on Mobile Services, Resources, and Users"@en ;
+    foaf:homepage <http://www.iaria.org/conferences2013/MOBILITY13.html> ;
+    swc:hasLocation <http://dbpedia.org/resource/Lisbon> .
+
+me:iswc2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2013"@en ;
+    swc:isRoleAt me:iswc2013 .
+
+me:iswc2013
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2013"@en ;
+    rdfs:comment "12th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2013.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Sydney> .
+
+me:arcoe2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ARCOE"@en ;
+    swc:isRoleAt me:arcoe2013 .
+
+me:arcoe2013
+    a swc:WorkshopEvent ;
+    rdfs:label "ARCOE 2013"@en ;
+    rdfs:comment "5th International Workshop on Acquisition, Representation and Reasoning with Contextualized Knowledge"@en ;
+    foaf:homepage <http://www.arcoe.org/2013/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Corunna> .
+
+me:masts2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at MASTS 2013"@en ;
+    swc:isRoleAt me:masts2013 .
+
+me:masts2013
+    a swc:WorkshopEvent ;
+    rdfs:label "MASTS 2014"@en ;
+    rdfs:comment "5th International Workshop on Multi-Agent Systems Technologies and Semantics"@en ;
+    foaf:homepage <http://aimas.cs.pub.ro/masts2013/home> ;
+    swc:hasLocation <http://dbpedia.org/resource/Prague> .
+
+me:iclp-dc2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ICLP-DC 2013"@en ;
+    swc:isRoleAt me:iclp-dc2013 .
+
+me:iclp-dc2013
+    a swc:WorkshopEvent ;
+    rdfs:label "ICLP-DC 2013"@en ;
+    rdfs:comment "9th ICLP Doctoral Consortium"@en ;
+    foaf:homepage <http://endif.unife.it/it/ricerca-1/aree-di-ricerca/informazione/ingegneria-informatica/iclp-dc-13> ;
+    swc:hasLocation <http://dbpedia.org/resource/Istanbul> .
+
+me:ijcai2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at IJCAI 2013"@en ;
+    swc:isRoleAt me:ijcai2013 .
+
+me:ijcai2013
+    a swc:ConferenceEvent ;
+    rdfs:label "IJCAI 2013"@en ;
+    rdfs:comment "23rd International Joint Conference on Artificial Intelligence"@en ;
+    foaf:homepage <http://ijcai13.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Beijing> .
+
+me:at2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AT 2013"@en ;
+    swc:isRoleAt me:at2013 .
+
+me:at2013
+    a swc:ConferenceEvent ;
+    rdfs:label "AT 2013"@en ;
+    rdfs:comment "2nd International Conference on Agreement Technologies"@en ;
+    foaf:homepage <http://www.ia.urjc.es/at2013/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Beijing> .
+
+me:eswc2013-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2013"@en ;
+    swc:isRoleAt me:eswc2013 .
+
+me:eswc2013
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2013"@en ;
+    rdfs:comment "10th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2013.eswc-conferences.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Montpellier> .
+
+me:knowatlod2013-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at the Know@LOD 2013 workshop"@en ;
+    swc:isRoleAt me:knowatlod2013-talk .
+
+me:knowatlod2013-talk
+    a swc:TalkEvent ;
+    rdfs:label "Nell2RDF: Read the Web and turn it to RDF"@en ;
+    swc:isSubEventOf me:knowatlod2013 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/esws/ZimmermannGSC13> .
+
+me:mobilcite2013-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at MobilCitÃ© 2013"@en ;
+    swc:isRoleAt me:mobilicite2013-talk .
+
+me:mobilcite2013-talk
+    a swc:TalkEvent ;
+    rdfs:label "DonnÃ©es ouvertes et liÃ©es pour la mobilitÃ© urbaine"@fr ;
+    swc:isSubEventOf me:mobilcite2013 .
+
+me:mobilcite2013
+    a swc:AcademicEvent ;
+    rdfs:label "MobilÂ©itÃ© 2013"@fr ;
+    rdfs:comment "Â©ommunautÃ© de compÃ©tences autour de la mobilitÃ© urbaine"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:aow2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AOW 2012"@en ;
+    swc:isRoleAt me:aow2012 .
+
+me:aow2012
+    a swc:WorkshopEvent ;
+    rdfs:label "AOW 2012"@en ;
+    rdfs:comment "8th Australasian Ontology Workshop"@en ;
+    foaf:homepage <http://aow2012.yolasite.com/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Sydney> .
+
+me:at2012-grid-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of a short paper at Agreement Technologies written with PaweÅ‚ Szmeja"@en ;
+    swc:isRoleAt me:at2012-grid-talk .
+
+me:at2012-grid-talk
+    a swc:TalkEvents ;
+    rdfs:label "Reengineering the Core Grid Ontology"@en ;
+    swc:isSubEventOf me:at2012 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/at/SzmejaZ12> .
+
+me:at2012-swsma-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of a short paper at Agreement Technologies written with Alexandra-MÄƒdÄƒlina Zarafin and Olivier Boissier"@en ;
+    swc:isRoleAt me:at2012-grid-talk .
+
+me:at2012-swsma-talk
+    a swc:TalkEvents ;
+    rdfs:label "Integrating Semantic Web Technologies and Multi-Agent Systems: A Semantic Description of Multi-Agent Organizations"@en ;
+    swc:isSubEventOf me:at2012 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/at/ZarafinZB12> .
+
+me:at2012
+    a swc:ConferenceEvent ;
+    rdfs:label "AT 2012"@en ;
+    rdfs:comment "First International Conference on Agreement Technologies"@en ;
+    foaf:homepage <http://at2012.tel.fer.hr/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Dubrovnik> .
+
+me:iswc2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2012"@en ;
+    swc:isRoleAt me:iswc2012 .
+
+me:iswc2012
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2012"@en ;
+    rdfs:comment "11th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2012.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Boston> .
+
+me:masts2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at "@en ;
+    swc:isRoleAt me:masts2012 .
+
+me:masts2012
+    a swc:WorkshopEvent ;
+    rdfs:label "MASTS 2012"@en ;
+    rdfs:comment "4th International Workshop on Multi-Agent Systems Technologies and Semantics"@en ;
+    foaf:homepage <http://aimas.cs.pub.ro/masts2012/home> ;
+    swc:hasLocation <http://dbpedia.org/resource/Calabria> .
+
+me:arcoe2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ARCOE 2012"@en ;
+    swc:isRoleAt me:arcoe2012 .
+
+me:arcoe2012
+    a swc:WorkshopEvent ;
+    rdfs:label "ARCOE 2012"@en ;
+    rdfs:comment "4th International Workshop on Acquisition, Representation and Reasoning with Contextualized Knowledge"@en ;
+    foaf:homepage <http://www.arcoe.org/2012/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Montpellier> .
+
+me:at-video-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of a video on Part 1 - Semantics in the book on Agreement Technologies"@en ;
+    swc:isRoleAt me:video-talk .
+
+me:video-talk
+    a swc:TalkEvent ;
+    rdfs:label "Semantics in Agreement Technologies"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Valencia> ;
+    swc:hasRelatedArtefact <https://media.upv.es/player/?id=b3777c82-299f-3f45-ad5b-0330a9dc57b3> .
+
+me:www2012-metadata-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the results of the metadata challenge at WWW 2012"@en ;
+    swc:isRoleAt me:www2012-talk .
+
+me:www2012-metadata-talk
+    a swc:TalkEvent ;
+    rdfs:label "Metadata Challenge"@en ;
+    swc:isSubEventOf me:www2012 .
+
+me:www2012-metadata-chair
+    a swc:Chair ;
+    rdfs:label "Metadata Chair at WWW 2012"@en ;
+    swc:isRoleAt me:www2012 .
+
+me:www2012
+    a swc:ConferenceEvent ;
+    rdfs:label "WWW 2012"@en ;
+    rdfs:comment ""@en ;
+    foaf:homepage <http://www.wwwconference.org/www2012/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Lyon> .
+
+me:eswc2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at "@en ;
+    swc:isRoleAt me:eswc2012 .
+
+me:eswc2012
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2012"@en ;
+    rdfs:comment "9th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://2012.eswc-conferences.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Heraklion> .
+
+me:icistm2012-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ICISTM 2012"@en ;
+    swc:isRoleAt me:icistm2012 .
+
+me:icistm2012
+    a swc:ConferenceEvent ;
+    rdfs:label "ICISTM 2012"@en ;
+    rdfs:comment "6th International Conference on Information Systems, Technology & Management"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Grenoble> .
+
+me:loddd-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at preparatory workshop towards Rio+20"@en ;
+    swc:isRoleAt me:loddd-talk .
+
+me:loddd-talk
+    a swc:TalkEvent ;
+    rdfs:label "DonnÃ©es ouvertes et liÃ©es pour le dÃ©veloppement durable"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:aow2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AOW 2011"@en ;
+    swc:isRoleAt me:aow2011 .
+
+me:aow2011
+    a swc:WorkshopEvent ;
+    rdfs:label "AOW 2011"@en ;
+    rdfs:comment "7th Australasian Ontology Workshop"@en ;
+    foaf:homepage <http://aow2011.yolasite.com/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Adelaide> .
+
+me:iswc2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2011"@en ;
+    swc:isRoleAt me:iswc2011 .
+
+me:iswc2011
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2011"@en ;
+    rdfs:comment "10th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2011.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Bonn> .
+
+me:emse-iscod-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at the ISCOD team meeting 8th September 2011"@en ;
+    swc:isRoleAt me:emse-iscod-talk .
+
+me:emse-iscod-talk
+    a swc:TalkEvent ;
+    rdfs:label "2 or 3 things I know about context on the Semantic Web"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Saint-Ã‰tienne> .
+
+me:masts2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at MASTS 2011"@en ;
+    swc:isRoleAt me:masts2011 .
+
+me:masts2011
+    a swc:WorkshopEvent ;
+    rdfs:label "MASTS 2011"@en ;
+    rdfs:comment "3rd International Workshop on Multi-Agent Systems Technology and Semantics"@en ;
+    foaf:homepage <http://aimas.cs.pub.ro/masts2011/home> ;
+    swc:hasLocation <http://dbpedia.org/resource/Delft> .
+
+me:nextmail2011-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at NextMail 2011"@en ;
+    swc:isRoleAt me:nextmail2011-talk .
+
+me:nextmail2011-talk
+    a swc:TalkEvent ;
+    rdfs:label "Leveraging the Linked Data Principles for Electronic Communication"@en ;
+    swc:isSubEventOf me:nextmail2011 .
+
+me:nextmail2011
+    a swc:WorkshopEvent ;
+    rdfs:label "NextMail 2011"@en ;
+    rdfs:comment "First International Workshop on Next Trends in Email"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Lyon> .
+
+me:owled2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at OWL-ED 2011"@en ;
+    swc:isRoleAt me:owled2011 .
+
+me:owled2011
+    a swc:WorkshopEvent ;
+    rdfs:label "OWL:ED 2011"@en ;
+    rdfs:comment "9th International Workshop on OWL: Experiences and Directions"@en ;
+    foaf:homepage <http://webont.org/owled/2012/> ;
+    swc:hasLocation <http://dbpedia.org/resource/San_Francisco> .
+
+me:eswc2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ESWC 2011"@en ;
+    swc:isRoleAt me:eswc2011 .
+
+me:eswc2011
+    a swc:ConferenceEvent ;
+    rdfs:label "ESWC 2011"@en ;
+    rdfs:comment "8th Extended Semantic Web Conference"@en ;
+    foaf:homepage <http://www.eswc2011.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Heraklion> .
+
+me:iswsa2011-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWSA 2011"@en ;
+    swc:isRoleAt me:iswsa2011 .
+
+me:iswsa2011
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWSA 2011"@en ;
+    rdfs:comment "2nd International Conference on Intelligent Semantic Web â€“ Services and Application"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Amman> .
+
+me:liris-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at LIRIS 14th January 2011"@en ;
+    swc:isRoleAt me:liris-talk .
+
+me:liris-talk
+    a swc:TalkEvent ;
+    rdfs:label "Web of Data, Linked Data, Semantic Web, Web Ontologies... and all the mess inside"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Lyon> .
+
+me:aow2010-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AOW 2010"@en ;
+    swc:isRoleAt me:aow2010 .
+
+me:aow2010
+    a swc:WorkshopEvent ;
+    rdfs:label "AOW 2010"@en ;
+    rdfs:comment "6th Australasian Ontology Workshop"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Adelaide> .
+
+me:at-paris-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at the plenary meeting of COST Action Agreement Technologies in Paris 15th December 2010"@en ;
+    swc:isRoleAt me:at-paris-talk .
+
+me:at-paris-talk
+    a swc:TalkEvent ;
+    rdfs:label "Introduction of the Working Group 1 activities on Semantics for Agreement Technologies"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Paris> .
+
+me:abcmi2010-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ABC:MI 2010"@en ;
+    swc:isRoleAt me:abcmi2010 .
+
+me:abcmi2010
+    a swc:WorkshopEvent ;
+    rdfs:label "ABC:MI 2010"@en ;
+    rdfs:comment "7th Workshop on Agent Based Computing: from Model to Implementation"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Poznan> .
+
+me:urq-chinese-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the URQ team to a Chinese delegation at DERI in August 2010"@en ;
+    swc:isRoleAt me:urq-chinese-talk .
+
+me:urq-chinese-talk
+    a swc:TalkEvent ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:iswsa2010-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWSA 2010"@en ;
+    swc:isRoleAt me:iswsa2010 .
+
+me:iswsa2010
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWSA 2010"@en ;
+    rdfs:comment "1st International Conference on Intelligent Semantic Web â€“ Services and Application"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Amman> .
+
+me:ores2010-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at ORES 2010"@en ;
+    swc:isRoleAt me:ores2010-talk .
+
+me:ores2010-talk
+    a swc:TalkEvent ;
+    rdfs:label "Recommending Ontologies for the Data Publishers"@en ;
+    swc:isSubEventOf me:ores2010 ;
+    swc:hasRelatedArtefact me:Zimmermann10 .
+
+me:ores2010
+    a swc:WorkshopEvent ;
+    rdfs:label "ORES 2010"@en ;
+    rdfs:comment "Workshop on Ontology Repositories and Editors for the Semantic Web"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Hersonissos> .
+
+me:womo2010-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at WoMO 2010"@en ;
+    swc:isRoleAt me:womo2010 .
+
+me:womo2010
+    a swc:ConferenceEvent ;
+    rdfs:label "WoMO 2010"@en ;
+    rdfs:comment "4th International Workshop on Modular Ontologies"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Toronto> .
+
+me:urq-dl3-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the 3rd part of the tutorial on Description Logics"@en ;
+    swc:isRoleAt me:urq-dl3-talk .
+
+me:urq-dl3-talk
+    a swc:TalkEvent ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:urq-dl2-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the 2nd part of the tutorial on Description Logics"@en ;
+    swc:isRoleAt me:urq-dl3-talk .
+
+me:urq-dl2-talk
+    a swc:TalkEvent ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:urq-dl1-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of the 1st part of the tutorial on Description Logics"@en ;
+    swc:isRoleAt me:urq-dl3-talk .
+
+me:urq-dl1-talk
+    a swc:TalkEvent ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:at-cyprus-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at the plenary meeting of COST Action Agreement Technologies in Cyprus 15th December 2010"@en ;
+    swc:isRoleAt me:at-cyprus-talk .
+
+me:at-cyprus-talk
+    a swc:TalkEvent ;
+    rdfs:label "Statistics on the Web of Data for object consolidation and instance matching"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Ayia_Napa> .
+
+me:aow2009-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at AOW 2009"@en ;
+    swc:isRoleAt me:aow2009 .
+
+me:aow2009
+    a swc:WorkshopEvent ;
+    rdfs:label "AOW 2009"@en ;
+    rdfs:comment "5th Australasian Ontology Workshop"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Melbourne> .
+
+me:odbase2009-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at ODBASE 2009"@en ;
+    swc:isRoleAt me:odbase2009-talk .
+
+me:odbase2009-talk
+    a swc:TalkEvent ;
+    rdfs:label "Heterogeneity and Context in Semantic-Web-Enabled HCLS Systems"@en ;
+    swc:isSubEventOf me:odbase2009 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/otm/ZimmermannSFP09> .
+
+me:odbase2009
+    a swc:ConferenceEvent ;
+    rdfs:label "ODBASE 2009"@en ;
+    rdfs:comment "8th International Conference on. Ontologies, DataBases, and Applications of Semantics"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Vilamoura> .
+
+me:iswc2009-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at ISWC 2009"@en ;
+    swc:isRoleAt me:iswc2009 .
+
+me:iswc2009
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2009"@en ;
+    rdfs:comment "8th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2008.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Chantilly> .
+
+me:intro-to-dl-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of a short tutorial on Description Logics"@en ;
+    swc:isRoleAt me:intro-to-dl-talk .
+
+me:intro-to-dl-talk
+    a swc:TalkEvent ;
+    rdfs:label "Introduction to Description Logics"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:deri-first-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of doctoral work at DERI, Galway"@en ;
+    swc:isRoleAt me:deri-first-talk .
+
+me:deri-first-talk
+    a swc:TalkEvent ;
+    rdfs:label "Semantics of Networked Knowledge"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Galway> .
+
+me:liris-seminar-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter of doctoral work at LIRIS, Lyon"@en ;
+    swc:isRoleAt me:liris-seminar-talk .
+
+me:liris-seminar-talk
+    a swc:TalkEvent ;
+    rdfs:label "SÃ©mantique des rÃ©seaux de connaissances"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Lyon> .
+
+me:phd-defense-presenter
+    a swc:Presenter ;
+    rdfs:label "PhD student defending his thesis at UniversitÃ© Joseph Fourier"@en ;
+    swc:isRoleAt me:phd-defense-talk .
+
+me:phd-defense-talk
+    a swc:TalkEvent ;
+    rdfs:label "SÃ©mantique des rÃ©seaux de connaissances : gestion de l'hÃ©tÃ©rogÃ©nÃ©itÃ© fondÃ©e sur le principe de mÃ©diation"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Grenoble> ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/phd/hal/Zimmermann08> .
+
+me:rr2008-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at RR 2008"@en ;
+    swc:isRoleAt me:rr2008-talk .
+
+me:rr2008-talk
+    a swc:TalkEvent ;
+    rdfs:label "Reasoning on a Network of Aligned Ontologies"@en ;
+    swc:isSubEventOf me:rr2008 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/rr/ZimmermannD08> .
+
+me:rr2008
+    a swc:ConferenceEvent ;
+    rdfs:label "RR 2008"@en;
+    rdfs:comment "Second International Conference on Web Reasoning and Rule Systems"@en ;
+    foaf:homepage <http://www.rr-conference.org/RR2008/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Karlsruhe> .
+
+me:worm2008-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at "@en ;
+    swc:isRoleAt me:worm2008 .
+
+me:worm2008
+    a swc:WorkshopEvent ;
+    rdfs:label "WORM 2008"@en ;
+    rdfs:comment "International Workshop on Ontologies: Reasoning and Modularity"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Tenerife> .
+
+me:smap2007-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at SMAP 2007"@en ;
+    swc:isRoleAt me:smap2007-talk .
+
+me:smap2007-talk
+    a swc:TalkEvent ;
+    rdfs:label "A Framework for Media Adaptation Using the Web and the Semantic Web"@en ;
+    swc:isSubEventOf me:smap2007 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/smap/LaborieZ07> .
+
+me:smap2007
+    a swc:WorkshopEvent ;
+    rdfs:label "SMAP 2007"@en ;
+    rdfs:comment "Second International Workshop on Semantic Media Adaptation and Personalization"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/London> .
+
+me:womo2007-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at WoMO 2007"@en ;
+    swc:isRoleAt me:womo2007-talk .
+
+me:womo2007-talk
+    a swc:TalkEvent ;
+    rdfs:label "Alignment-based Modules for Encapsulating Ontologies"@en ;
+    swc:isSubEventOf me:womo2007 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/kcap/EuzenatZF07> .
+
+me:womo2007-pc-member
+    a swc:ProgrammeCommitteeMember ;
+    rdfs:label "Programme Committee member at WoMO 2007"@en ;
+    swc:isRoleAt me:womo2007 .
+
+me:womo2007
+    a swc:ConferenceEvent ;
+    rdfs:label "WoMO 2007"@en ;
+    rdfs:comment "Second International Workshop on Modular Ontologies"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Whistler> .
+
+me:enaction_in_arts-local-organising-committee
+    a swc:Role ;
+    rdfs:label "Member of local organising committee of Enaction_in_Arts 2007"@en ;
+    swc:isRoleAt me:enaction_in_arts2007 .
+
+me:enaction_in_arts2007
+    a swc:ConferenceEvent ;
+    rdfs:label "Enaction_in_Arts 2007"@en ;
+    rdfs:comment "4th International Conference on Enactive Interfaces"@en ;
+    foaf:homepage <http://acroe.imag.fr/enactive07/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Grenoble> .
+
+me:iawi2007-talkpresenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at IAWI 2007"@en ;
+    swc:isRoleAt me:iawi2007-talk .
+
+me:iawi2007-talk
+    a swc:TalkEvent ;
+    rdfs:label "Alignment-based Modules for Encapsulating Ontologies"@en ;
+    swc:isSubEventOf me:iawi2007 ;
+    swc:hasRelatedArtefact me: .
+
+me:iawi2007
+    a swc:ConferenceEvent ;
+    rdfs:label "IAWI 2007"@fr ;
+    rdfs:comment "Atelier sur l'intelligence artificielle et Web intelligence"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Grenoble> .
+
+me:afia2007-local-organising-committee
+    a swc:Role ;
+    rdfs:label "Member of local organising committee of Plateforme AFIA 2007"@en ;
+    swc:isRoleAt me:afia2007 .
+
+me:afia2007
+    a swc:AcademicEvent ;
+    rdfs:label "Plate-forme AFIA 2007"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Agglomeration_community_of_the_Grenoble_Alpes_M%C3%A9tropole> .
+
+me:dl2007-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at DL 2007"@en ;
+    swc:isRoleAt me:dl2007-talk .
+
+me:dl2007-talk
+    a swc:TalkEvent ;
+    rdfs:label "Integrated Distributed Description Logics"@en ;
+    swc:isSubEventOf me:dl2007 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/dlog/Zimmermann07> .
+
+me:dl2007
+    a swc:WorkshopEvent ;
+    rdfs:label "DL 2007"@en;
+    rdfs:comment "20th Workshop on Description Logics"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Brixen> ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/fois/ZimmermannKEH06> .
+
+me:fois2006-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at FOIS 2006"@en ;
+    swc:isRoleAt me:fois2006-talk .
+
+me:fois2006-talk
+    a swc:TalkEvent ;
+    rdfs:label "Formalizing Ontology Alignment and its Operations in Category Theory"@en ;
+    swc:isSubEventOf me:fois2006 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/fois/ZimmermannKEH06> .
+
+me:fois2006
+    a swc:ConferenceEvent ;
+    rdfs:label "FOIS 2006"@en;
+    rdfs:comment "Third International Conference on Formal Ontologies in Information Systems"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Baltimore> .
+
+me:iswc2006-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at ISWC 2006"@en ;
+    swc:isRoleAt me:iswc2006-talk .
+
+me:iswc2006-talk
+    a swc:TalkEvent ;
+    rdfs:label "Three Semantics for Distributed Systems and their Relations with Ontology Alignment Composition"@en ;
+    swc:isSubEventOf me:iswc2006 ;
+    swc:hasRelatedArtefact <https://dblp.uni-trier.de/rec/conf/semweb/ZimmermannE06> .
+
+me:iswc2006
+    a swc:ConferenceEvent ;
+    rdfs:label "ISWC 2006"@en;
+    rdfs:comment "5th International Semantic Web Conference"@en ;
+    foaf:homepage <http://iswc2006.semanticweb.org/> ;
+    swc:hasLocation <http://dbpedia.org/resource/Athens,_Giorgia> .
+
+me:recife-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at University of Pernambuco, Brazil"@en ;
+    swc:isRoleAt me:recife-talk .
+
+me:recife-talk
+    a swc:TalkEvent ;
+    rdfs:label "Ontology Alignment Algebra for Ontology Modularization"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Recife> .
+
+me:wi-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at Web Intelligence meeting, Valence, France"@en ;
+    swc:isRoleAt me:wi-talk .
+
+me:wi-talk
+    a swc:TalkEvent ;
+    rdfs:label "Position d'EXMO dans le projet Web Intelligence"@fr ;
+    swc:hasLocation <http://dbpedia.org/resource/Valence,_DrÃ´me> .
+
+me:kweb-presenter
+    a swc:Presenter ;
+    rdfs:label "Presenter at Knowledge Web meeting, Hersonissos, Greece"@en ;
+    swc:isRoleAt me:kweb-talk .
+
+me:kweb-talk
+    a swc:TalkEvent ;
+    rdfs:label "Formalizing Ontology Alignment with Category Theory"@en ;
+    swc:hasLocation <http://dbpedia.org/resource/Hersonissos> .
+
+<https://dblp.uni-trier.de/pers/s/Singh:Kamal_Deep> owl:sameAs <https://dblp.uni-trier.de/pers/s/Singh:Kamal> .

@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+<!--    <link rel="meta" type="text/turtle" title="FOAF" about="httplocalhost:8080/d#" property="dc:description" href="httplocalhost:8080/d.ttl" />-->
+
 </head>
 <body>
 <h1>index  <a href="/hi" > hello page</a> </h1>
+<!--<a href="d.ttl">profile</a><br/>-->
+<table align="center" border="2.5">
+    <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+        <th>IN STOCK</th>
+    </tr>
+    <tr th:each="hospital : ${hospitals}">
+        <td th:text="${hospital.name}"></td>
+        <td th:text="${hospital.sex}"></td>
+        <td th:text="${hospital.birth}"></td>
+    </tr>
+</table>
+
 
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospitals</title>
+</head>
+<body>
+<h1> sllo Hospital</h1>
+<table align="center" border="2.5">
+    <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+        <th>IN STOCK</th>
+    </tr>
+    <tr th:each="hospital : ${hospitals}">
+        <td th:text="${hospital.name}"></td>
+        <td th:text="${hospital.sex}"></td>
+        <td th:text="${hospital.birth}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -33,7 +33,7 @@ public class HospitalServices {
 
     @PostConstruct
     @Scheduled(cron = "1 * * * * *")
-    public void queryData() throws IOException {
+    public void queryHopitalData() throws IOException {
         List<Hospital> updateHospitalsList = new ArrayList<>();
         // Define the prefixes of the knowledge base
         String prefixes = "prefix dbp: <http://dbpedia.org/property/> \n" +
@@ -52,7 +52,7 @@ public class HospitalServices {
                 "        ?name1 dbo:country dbr:Netherlands .\n" +
                 "   }} ORDER BY ?sex desc(?birth) limit 2");
         QueryExecution queryExe = QueryExecutionFactory.sparqlService(service,query);
-//        ResultSet resultSet = queryExe.execSelect();
+
 
         try {
             ResultSet resultSet = queryExe.execSelect();
@@ -67,7 +67,7 @@ public class HospitalServices {
                 System.out.println("here the resource "+resource);
 
                 hospital.setName(name.toString());
-                hospital.setSex(sex.toString());
+                hospital.setSex(sex.getString());
                 hospital.setBirth(birth.getString());
 
                 updateHospitalsList.add(hospital);

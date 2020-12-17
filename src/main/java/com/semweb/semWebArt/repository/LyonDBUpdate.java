@@ -28,7 +28,10 @@ public class LyonDBUpdate {
     private Model model = ModelFactory.createDefaultModel();
     RDFConnection conneg = RDFConnectionFactory.connect(sparqlEndpoint, sparqlUpdate, graphStore);
 
-    public void paresStEtienne(String url1) throws IOException, InterruptedException, JSONException {
+    public LyonDBUpdate()  {
+
+    }
+    public void paresLyon(String url1) throws IOException, InterruptedException, JSONException {
 
         // Connect to the endpoint to retrive run-time data
         HttpClient client = HttpClient.newHttpClient();
@@ -44,8 +47,8 @@ public class LyonDBUpdate {
         model.setNsPrefix("rdfs", rdfs);
         model.setNsPrefix("bike", bike);
 
-        conneg.update("DELETE DATA { <test> a <TestClass> }");
-        conneg.update("DELETE WHERE { <test> a <TestClass> }");
+//        conneg.update("DELETE DATA { <test> a <TestClass> }");
+//        conneg.update("DELETE WHERE { <test> a <TestClass> }");
         try {
             HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url1)).build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -59,16 +62,16 @@ public class LyonDBUpdate {
                 JSONObject data = (JSONObject) features.get(i);
                 JSONObject properties = data.getJSONObject("properties");
 
-                String stationId = data.getString("number");
-                String stationName = data.getString("name");
-                String stationAddress = data.getString("address");
-                String commune = data.getString("commune");
+                String stationId = properties.getString("number");
+                String stationName = properties.getString("name");
+                String stationAddress = properties.getString("address");
+                String commune = properties.getString("commune");
                 Double lat = properties.getDouble("lat");
                 Double lon = properties.getDouble("lng");
-                int capacity = data.getInt("bike_stands");
-                int numBikesAvailable = data.getInt("available_bikes");
-                int numDocksAvailable = data.getInt("available_bike_stands");
-                String status = data.getString("status");
+                int capacity = properties.getInt("bike_stands");
+                String numDocksAvailable = (properties.getString("available_bike_stands").isEmpty()) ? "0" : properties.getString("available_bike_stands");
+                String  numBikesAvailable = (properties.getString("available_bikes").isEmpty()) ? "0" : properties.getString("available_bikes");
+                String status = properties.getString("status");
 
                 Resource thisSubject = model.createResource(bike + stationId);
                 Property typeof = model.createProperty(rdf + "type");
@@ -96,10 +99,10 @@ public class LyonDBUpdate {
                 Literal capacityValue = model.createTypedLiteral((int) capacity);
 
                 Property availableBike = model.createProperty(bike + "availableBike");
-                Literal availableBikeValue = model.createTypedLiteral((int) numBikesAvailable);
+                Literal availableBikeValue = model.createTypedLiteral( Integer.parseInt(numBikesAvailable));
 
                 Property availableDocks = model.createProperty(bike + "availableDock");
-                Literal availableDocksValue = model.createTypedLiteral((int) numDocksAvailable);
+                Literal availableDocksValue = model.createTypedLiteral( Integer.parseInt(numDocksAvailable));
 
                 model.add(thisSubject, availableBike, availableBikeValue);
                 model.add(thisSubject, availableDocks, availableDocksValue);
@@ -113,10 +116,13 @@ public class LyonDBUpdate {
                 model.add(thisSubject, stationAddressProp, stationAddressValue);
                 model.add(thisSubject, communeProp, communeValue);
 
+                conneg.update("INSERT DATA { <test> a <TestClass> }"); // add the triple to the triplestore
             }
-            conneg.update("INSERT DATA { <test> a <TestClass> }"); // add the triple to the triplestore
         }finally {
             conneg.close();
         }
+
+//        TimeUnit.SECONDS.sleep(10);
+
     }
 }

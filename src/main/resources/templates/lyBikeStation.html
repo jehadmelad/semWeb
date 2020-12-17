@@ -43,8 +43,9 @@
 
     <div class="row justify-content-center">
 
-        <table class="table table-striped table-bordered table-striped mb-0" align="center"  >
+        <table class="table table-striped table-bordered table-striped mb-0" align="center" >
             <tr align="center" style="color:#0073e6;">
+                <th scope="col">#</th>
                 <th scope="col">Station Name</th>
                 <th scope="col">Capcity</th>
                 <th scope="col">Available Bikes</th>
@@ -53,16 +54,17 @@
                 <th scope="col">Longitude</th>
                 <th scope="col">Map</th>
             </tr>
-            <div  th:each="station : ${bikeStations}">
+            <div  th:each="station, iter : ${LybikeStations}">
                 <tr  align="center">
+                    <td th:text="${iter.index +1}" ></td>
                     <td th:text="${station.stationName}" style="font-weight: bold"></td>
                     <td th:text="${station.capacity}"></td>
                     <td th:text="${station.avalaibleBike}"></td>
                     <td th:text="${station.availableDock}"></td>
                     <td th:text="${station.latitude}"></td>
                     <td th:text="${station.longitude}"></td>
-                    <td> <div style="width: 90%"><a ht:href="@{'https://www.google.com/maps/@'+ ${station.latitude} +','+ ${station.longitude}" target="_blank"><iframe width="50%" height="50" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" th:src="@{'https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q='+ ${station.latitude} +','+ ${station.longitude} +'+('+ ${station.stationName} +')&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'}"></iframe>Road Trip Planner</a></div>
-                    </td>
+<!--                    <td> <div style="width: 90%"><a ht:href="@{'https://www.google.com/maps/@'+${station.latitude}+','+${station.longitude}" target="_blank"><iframe width="50%" height="50" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" th:src="@{'https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q='+${station.latitude}+','+${station.longitude}+'+('+ ${station.stationName} +')&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'}"></iframe>Road Trip Planner</a></div>-->
+<!--                    </td>-->
                 </tr>
 
             </div>

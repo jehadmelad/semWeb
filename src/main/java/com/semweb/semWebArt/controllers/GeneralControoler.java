@@ -1,8 +1,8 @@
 package com.semweb.semWebArt.controllers;
 
 import com.semweb.semWebArt.model.BikeStation;
+import com.semweb.semWebArt.services.LyonBikeStationService;
 import com.semweb.semWebArt.services.StEtienneBikeStationService;
-import com.semweb.semWebArt.services.HospitalServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,29 +15,40 @@ import java.util.List;
 public class GeneralControoler {
 
     @Autowired
-    HospitalServices hospitalServices;
-
-    @Autowired
     StEtienneBikeStationService stEtienneBikeStationService;
 
+    @Autowired
+    LyonBikeStationService lyonBikeStationService;
 
+    @RequestMapping(method = RequestMethod.GET, value = "/st")
+    public String StBikeStation(Model model) {
 
-//    @RequestMapping(method = RequestMethod.GET, value = "/")
-//    public String index(Model model) {
-//
-//        List<Hospital> hospitals = hospitalServices.getHospitalsList();
-//        model.addAttribute("hospitals", hospitals);
-//        return "index";
-//    }
+        List<BikeStation> StStations = stEtienneBikeStationService.getBikeStationList();
+//        System.out.println(Stations);
+        model.addAttribute("bikeStations", StStations);
 
-    @RequestMapping(method = RequestMethod.GET, value = "/station")
-    public String bikeStation(Model model) {
-
-        List<BikeStation> Stations = stEtienneBikeStationService.getBikeStationList();
-        System.out.println(Stations);
-        model.addAttribute("bikeStations", Stations);
         return "bikeStation";
     }
+    @RequestMapping(method = RequestMethod.GET, value = "/lyon")
+    public String lybikeStation(Model model) {
+
+        List<BikeStation> LyStations = lyonBikeStationService.getLyonBikeStationList();
+        System.out.println(LyStations);
+        model.addAttribute("LybikeStations", LyStations);
+
+        return "lyBikeStation";
+    }
+
+
+//    @Autowired
+//    HospitalServices hospitalServices;
+//
+//    @RequestMapping(method = RequestMethod.GET, value = "/st")
+//    public String hospitalController(Model moelel){
+//        List<Hospital> hospitals = hospitalServices.getHospitalsList();
+//        moelel.addAttribute("test", hospitals);
+//        return "index";
+//    }
 
 
 

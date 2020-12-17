@@ -1,7 +1,6 @@
 package com.semweb.semWebArt.services;
 
 import com.semweb.semWebArt.model.BikeStation;
-import com.semweb.semWebArt.repository.LyonDBUpdate;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.RDFNode;
@@ -10,36 +9,42 @@ import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionRemote;
 import org.json.JSONException;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class LyonBikeStationService {
 
+    // At the begining, we call the function to pares the link then send the data to RDF store
+//    String url_1 = "https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171";
+//    LyonDBUpdate update = new LyonDBUpdate();
+
+
+    private String DBName = "lyBike";
     private RDFConnection conn0 = RDFConnectionRemote.create()
-            .destination("http://localhost:3030/bikeStationDB")
+            .destination("http://localhost:3030/"+DBName)
             .queryEndpoint("sparql")
             .acceptHeaderSelectQuery("application/sparql-results+json, application/sparql-results+xml;q=0.9")
             .build();
-    private String service = "http://localhost:3030/bikeStationDB";
+    private String service = "http://localhost:3030/"+DBName;
 
-    private List<BikeStation> BikeStationList = new ArrayList<>();
+    private List<BikeStation> lyonBikeStationList = new ArrayList<>();
 
-    public List<BikeStation> getBikeStationList() {
+    public LyonBikeStationService() throws InterruptedException, JSONException, IOException {
+    }
 
-        return BikeStationList;
+    public List<BikeStation> getLyonBikeStationList() {
+        return lyonBikeStationList;
     }
 
     @PostConstruct
     @Scheduled(cron = "* 1 * * * *")
     public void queryBikeStationData() throws IOException, JSONException, InterruptedException {
-
-        String url_1 = "https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171";
-        LyonDBUpdate lyonDBUpdate = new LyonDBUpdate();
-        lyonDBUpdate.paresStEtienne(url_1);
-
+//        update.paresLyon(url_1);
         List<BikeStation> updateBikeStationList = new ArrayList<>();
 
         // Define the prefixes of the knowledge base
@@ -96,14 +101,13 @@ public class LyonBikeStationService {
                 bikeStation.setStatus(status.toString());
                 bikeStation.setStationAddress(address.toString());
 
-
-                System.out.println(bikeStation.toString());
+//                System.out.println(bikeStation.toString());
 
                 updateBikeStationList.add(bikeStation);
             }
         }finally{
             queryExe.close();
         }
-        this.BikeStationList    =   updateBikeStationList;
+        this.lyonBikeStationList   =   updateBikeStationList;
     }
 }

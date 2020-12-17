@@ -17,22 +17,22 @@ import java.util.List;
 
 @Service
 public class HospitalServices {
-
+    // To establish the connection with jena
+    private String nameOfDB = "animal";
     private RDFConnection conn0 = RDFConnectionRemote.create()
-            .destination("http://localhost:3030/animal")
+            .destination("http://localhost:3030/" + nameOfDB )
             .queryEndpoint("sparql")
-            .acceptHeaderSelectQuery("application/sparql-results+json, application/sparql-results+xml;q=0.9")
             .build();
-    private String service = "http://localhost:3030/animal";
+    private String service = "http://localhost:3030/" + nameOfDB;
 
+    // Make instans list from type Hospital model that we created before
     private List<Hospital> hospitalsList = new ArrayList<>();
-
     public List<Hospital> getHospitalsList() {
         return hospitalsList;
     }
 
     @PostConstruct
-    @Scheduled(cron = "1 * * * * *")
+    @Scheduled(cron = "* * 2 * * *")
     public void queryHopitalData() throws IOException {
         List<Hospital> updateHospitalsList = new ArrayList<>();
         // Define the prefixes of the knowledge base
@@ -48,17 +48,20 @@ public class HospitalServices {
                 "prefix xsd: <http://www.w3.org/2001/XMLSchema#> \n" ;
 
         // The query used to retrive our information using SPARQL
-        Query query = QueryFactory.create( prefixes + "\n" + "select ?people ?sex ?birth ?name1 where {?people rdf:type dbo:Person .?people dbp:name ?name .?people tto:sex ?sex . ?people dbp:birthDate ?birth . SERVICE <http://dbpedia.org/sparql> {\n" +
+        Query query = QueryFactory.create( prefixes + "\n" + "select ?people ?sex ?birth ?name1 where \n"+
+                " {?people rdf:type dbo:Person .?people dbp:name ?name .?people tto:sex ?sex .\n"+
+                " ?people dbp:birthDate ?birth . SERVICE <http://dbpedia.org/sparql> {\n" +
                 "        ?name1 dbo:country dbr:Netherlands .\n" +
                 "   }} ORDER BY ?sex desc(?birth) limit 2");
         QueryExecution queryExe = QueryExecutionFactory.sparqlService(service,query);
 
-
+        //Here the iteratoin throught the result
         try {
             ResultSet resultSet = queryExe.execSelect();
             while (resultSet.hasNext()) {
                 Hospital hospital = new Hospital();
                 QuerySolution soln = resultSet.nextSolution();
+
                 Resource resource=soln.getResource("people");
                 RDFNode name = soln.get("name1");
                 Literal sex = soln.getLiteral("sex");
@@ -76,9 +79,5 @@ public class HospitalServices {
             queryExe.close();
         }
         this.hospitalsList=updateHospitalsList;
-
-
-
-
     }
 }

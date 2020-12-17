@@ -26,15 +26,17 @@ public class StEtienneBikeStationService {
             .build();
     private String service = "http://localhost:3030/bikeStationDB";
 
-    private List<BikeStation> BikeStationList = new ArrayList<>();
+    private List<BikeStation> bikeStationList = new ArrayList<>();
 
     public List<BikeStation> getBikeStationList() {
 
-        return BikeStationList;
+        return bikeStationList;
     }
 
+
+
     @PostConstruct
-    @Scheduled(cron = "* 1 * * * *")
+    @Scheduled(cron = "* * 2 * * *")
     public void queryBikeStationData() throws IOException, JSONException, InterruptedException {
 
         String url_1 = "https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json";
@@ -93,6 +95,6 @@ public class StEtienneBikeStationService {
         }finally{
             queryExe.close();
         }
-        this.BikeStationList    =   updateBikeStationList;
+        this.bikeStationList    =   updateBikeStationList;
     }
 }

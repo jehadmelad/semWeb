@@ -6,7 +6,6 @@ public class Hospital {
     private String people;
     private String sex;
     private String birth;
-
     public String getName() {
         return name;
     }
@@ -38,7 +37,6 @@ public class Hospital {
     public void setBirth(String birth) {
         this.birth = birth;
     }
-
     @Override
     public String toString() {
         return "Hospital{" +

@@ -240,7 +240,7 @@ owl:Thing rdf:type owl:Class;
 
 ```
 
-#### Stracture Data `RDFa`
+#### structure Data `RDFa`
 We have used a type of stracture data which embeded in html to inhance the content of the page on the internet and the search engin. down here a part of our validation
 
 ```

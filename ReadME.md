@@ -14,7 +14,7 @@
 - Be sure that your text editor have java 11 or above. because we have some dependencies work only with >=  java 11.
 - About the stacture data we used RDFa and we have i technical issue to validate it in **RDFa Distiller**, but it works when we just take one part of (div) `<div>.....</div>` as shown in img below:
 
-![set up database.](fuseki schema and data/rdfa.PNG)
+![set up database.](https://raw.githubusercontent.com/jehadmelad/semWeb/master/fuseki%20schema%20and%20data/rdfa.PNG)
 
 
 #### Introduction
@@ -55,7 +55,7 @@ you have to have as the below img.
 </li>
 </ol>
 
-![set up database.](fuseki schema and data/fuseki-1.PNG)
+![set up database.](https://raw.githubusercontent.com/jehadmelad/semWeb/master/fuseki%20schema%20and%20data/fuseki-1.PNG)
 
 
 
@@ -83,7 +83,7 @@ you have to have as the below img.
 #### Ontology (_Bik-Hos_ )
 For the ontology, we try to define our ontology based on topics that we are interested in. Therefore we have an ontology to serve bike stations and hospitals, the ontology illustrate as shown in the img below . In the next few lines, we will go through details:
 
-![set up database.](fuseki schema and data/ontology.PNG)
+![set up database.](https://raw.githubusercontent.com/jehadmelad/semWeb/master/fuseki%20schema%20and%20data/ontology.PNG)
 
 
 #### Our ontology

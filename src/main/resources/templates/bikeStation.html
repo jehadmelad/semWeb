@@ -30,7 +30,7 @@
     </style>
     <!--    <script asyc defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwu8BSDRFJcd6L0kfaL5ZyruTObd5lcuY&callback=initMap&libraries=&v=initMap"> </script>-->
 </head>
-<body vocab="http://purl.org/dc/terms/">
+<body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" justify-content-center>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" justify-content-center>
@@ -79,7 +79,7 @@
                 <th scope="col">Longitude</th>
                 <th scope="col">Map</th>
             </tr>
-            <div vocab="http://localhost:3030/Bik-Hos/"   typeof="geo:SpatialThing"  th:each="station, iter : ${bikeStations}">
+            <div about="http://localhost:3030/Bik-Hos/BikeStation"  th:each="station, iter : ${bikeStations}">
                 <tr  align="center">
                     <td th:text="${iter.index + 1}"></td>
                     <td > <span property="bike:stationName" datatype="xsd:string" th:content="${station.stationName}" th:text="${station.stationName}" style="font-weight: bold"> </span></td>

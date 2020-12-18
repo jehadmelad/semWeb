@@ -8,6 +8,15 @@
 |Mohamad Nour Badr |  CPS2 |  M2 | 2020/2021|
 |Jehad Melad| CPS2  | M2  |2020/2021|
 
+### Notes:
+- The webserver gets heavy so we reduce the result of the qurey to 25 entities for the Museum Data and for the Local Hospital data we reduce it to 200 entities.
+- Due to map integration, it may take you time to load the page which contains a Maps.
+- Be sure that your text editor have java 11 or above. because we have some dependencies work only with >=  java 11.
+- About the stacture data we used RDFa and we have i technical issue to validate it in **RDFa Distiller**, but it works when we just take one part of (div) `<div>.....</div>` as shown in img below:
+
+![set up database.](fuseki schema and data/rdfa.PNG)
+
+
 #### Introduction
 This project is an extension of what we learn during the year of 
 Master program M2 in the domain Cyber-Physical and social systems. 
@@ -37,11 +46,17 @@ path:/apache-jena-fuseki-3.16.0\apache-jena-fuseki-3.16.0\run\databases
 
 <li>  After that, you have to run Fuseki server and create a new dataset hold the 
 same names as the two folders (Bik-Hos and Bike-Hos-data ), at the end it sould look like the img below.
+</li>
+
+<li>
+Also for the real-time non-rdf data, you have to setup and create two dataset within Fsueki server
+with these two name (lyBike and bikeStationDB), otherwise, you may have some errors.
+you have to have as the below img.
+</li>
+</ol>
 
 ![set up database.](fuseki schema and data/fuseki-1.PNG)
 
-</li>
-</ol>
 
 
 
@@ -71,10 +86,166 @@ For the ontology, we try to define our ontology based on topics that we are inte
 ![set up database.](fuseki schema and data/ontology.PNG)
 
 
+#### Our ontology
+```
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
 
+@prefix : 		<http://visualdataweb.org/Bik-Hos/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix bikhos: 		<http://localhost:3030/Bik-Hos/> .
+@prefix geo: 		<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@base 			<http://visualdataweb.org/Bik-Hos/> .
 
+<http://visualdataweb.org/Bik-Hos/> rdf:type owl:Ontology ;
+                                    dc:title "Bik-Hos"@en;
+                                    dc:description "This ontology has been defined based on specific data, which hospitals and bike station."@en;
+                                    owl:versionInfo "2"@en;
+                                    dc:creator "Mohamad Bader, Jehad Melad" . 
+#################################################################
 
+###  Property Definitions (Number of Property) 18 ###
+#  --------------------------- Property 0------------------------- 
+:osm_TimeStamp rdf:type owl:DatatypeProperty ;
+               rdfs:label "osm_TimeStamp"@en; 
+               rdfs:domain :Hospital;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+:wikiData rdf:type owl:DatatypeProperty ;
+          rdfs:label "wikiData"@en; 
+          rdfs:domain :Hospital;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
+:buildingNumber rdf:type owl:DatatypeProperty ;
+                rdfs:label "buildingNumber"@en; 
+                rdfs:domain :Hospital;
+                rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 3------------------------- 
+:ref-France-Finess rdf:type owl:DatatypeProperty ;
+                   rdfs:label "ref-France-Finess"@en; 
+                   rdfs:domain :Hospital;
+                   rdfs:range xsd:string . 
+#  --------------------------- Property 4------------------------- 
+:emergency rdf:type owl:DatatypeProperty ;
+           rdfs:label "emergency"@en; 
+           rdfs:domain :Hospital;
+           rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 5------------------------- 
+:type-France-Finess rdf:type owl:DatatypeProperty ;
+                    rdfs:label "type-France-Finess"@en; 
+                    rdfs:domain :Hospital;
+                    rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 6------------------------- 
+:availableDock rdf:type owl:DatatypeProperty ;
+               rdfs:label "availableDock"@en; 
+               rdfs:domain :BikeStation;
+               rdfs:range xsd:integer . 
+#  --------------------------- Property 7------------------------- 
+:availableBike rdf:type owl:DatatypeProperty ;
+               rdfs:label "availableBike"@en; 
+               rdfs:domain :BikeStation;
+               rdfs:range xsd:integer . 
+#  --------------------------- Property 8------------------------- 
+:capacity rdf:type owl:DatatypeProperty ;
+          rdfs:label "capacity"@en; 
+          rdfs:domain :BikeStation;
+          rdfs:range xsd:integer . 
+#  --------------------------- Property 9------------------------- 
+:lat rdf:type owl:DatatypeProperty ;
+     rdfs:label "lat"@en; 
+     rdfs:domain :BikeStation;
+     rdfs:range xsd:double . 
+#  --------------------------- Property 10------------------------- 
+:lon rdf:type owl:DatatypeProperty ;
+     rdfs:label "lon"@en; 
+     rdfs:domain :BikeStation;
+     rdfs:range xsd:double . 
+#  --------------------------- Property 11------------------------- 
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:label "hasStatus"@en; 
+           rdfs:domain :BikeStation;
+           rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 12------------------------- 
+:stationName rdf:type owl:DatatypeProperty ;
+             rdfs:label "stationName"@en; 
+             rdfs:domain :BikeStation;
+             rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 13------------------------- 
+:hasAddress rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasAddress"@en; 
+            rdfs:domain :BikeStation;
+            rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 14------------------------- 
+:locatedInCommune rdf:type owl:DatatypeProperty ;
+                  rdfs:label "locatedInCommune"@en; 
+                  rdfs:domain :BikeStation;
+                  rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 15------------------------- 
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:label "name"@en; 
+      rdfs:domain :City;
+      rdfs:range xsd:string . 
+#  --------------------------- Property 16------------------------- 
+:lat rdf:type owl:DatatypeProperty ;
+     rdfs:label "lat"@en; 
+     rdfs:domain :City;
+     rdfs:range xsd:double . 
+#  --------------------------- Property 17------------------------- 
+:lon rdf:type owl:DatatypeProperty ;
+     rdfs:label "lon"@en; 
+     rdfs:domain :City;
+     rdfs:range xsd:double . 
+###  Class Definitions (Number of Classes) 8 ###
+#  --------------------------- Class  0------------------------- 
+geo:SpatialThing rdf:type owl:Class; 
+                 rdfs:subClassOf owl:Thing ;
+                 rdfs:label "Spatial Thing"@en . 
+#  --------------------------- Class  1------------------------- 
+:Country rdf:type owl:Class; 
+         rdfs:subClassOf geo:SpatialThing ;
+         rdfs:label "Country"@en . 
+#  --------------------------- Class  2------------------------- 
+:City rdf:type owl:Class; 
+      rdfs:subClassOf :Country ;
+      owl:disjointWith :BikeStation ;
+      rdfs:label "City"@en . 
+#  --------------------------- Class  3------------------------- 
+:Hospital rdf:type owl:Class; 
+          rdfs:subClassOf :Building ;
+          rdfs:label "Hospital"@en . 
+#  --------------------------- Class  4------------------------- 
+:Transportaion rdf:type owl:Class; 
+               rdfs:subClassOf :City ;
+               rdfs:label "Transportaion"@en . 
+#  --------------------------- Class  5------------------------- 
+:BikeStation rdf:type owl:Class; 
+             rdfs:subClassOf :Transportaion ;
+             rdfs:label "BikeStation"@en . 
+#  --------------------------- Class  6------------------------- 
+:Building rdf:type owl:Class; 
+          rdfs:subClassOf :City ;
+          rdfs:label "Building"@en . 
+#  --------------------------- Class  7------------------------- 
+owl:Thing rdf:type owl:Class; 
+          rdfs:label "Thing"@en . 
 
+```
+
+#### Stracture Data `RDFa`
+We have used a type of stracture data which embeded in html to inhance the content of the page on the internet and the search engin. down here a part of our validation
+
+```
+<strong>r</strong>
+```
 <div id="classes"> 
 
 <h4>Classes</h4>

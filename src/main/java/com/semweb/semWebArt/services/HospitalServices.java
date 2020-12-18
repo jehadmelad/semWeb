@@ -17,11 +17,11 @@ import java.util.List;
 public class HospitalServices {
 
     private RDFConnection conn0 = RDFConnectionRemote.create()
-            .destination("http://localhost:3030/Hospital_Data")
+            .destination("http://localhost:3030/Bik-Hos-Data")
             .queryEndpoint("sparql")
             .acceptHeaderSelectQuery("application/sparql-results+json, application/sparql-results+xml;q=0.9")
             .build();
-    private String service = "http://localhost:3030/Hospital_Data";
+    private String service = "http://localhost:3030/Bik-Hos-Data";
 
     private List<Hospital> hospitalsList = new ArrayList<>();
 
@@ -37,7 +37,7 @@ public class HospitalServices {
         String prefixes =  " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n"
                 + "PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\r\n"
                 + "PREFIX  hospital:<https://schema.org/Hospital/>\r\n"
-                + "PREFIX localSchema:<http://localhost:3030/schema/>\r\n"
+                + "PREFIX localSchema:<http://localhost:3030/Bik-Hos/>\r\n"
                 + "PREFIX geao:<http://www.w3.org/2003/01/geo/wgs84_pos#>\r\n"
                 + "PREFIX schema: <https://schema.org/>\r\n"
                 + "PREFIX ex: <http://www.example.com/>\r\n"+"PREFIX foaf: <http://xmlns.com/foaf/0.1/>";
@@ -50,12 +50,12 @@ public class HospitalServices {
                 + "         		(?d As ?City)(?f As ?postalCode)(?h As ?TimeStamp)\r\n"
                 + "         		(?j As ?MedicalSpecialty)(?z As ?lat_long)\r\n"
                 + "         		    WHERE { ?x  a schema:Thing ;schema:identifier ?q; schema:alternateName ?w;schema:provider ?e;\r\n"
-                + "         		 localSchema:Emergency ?r;localSchema:OperatorType ?t;\r\n"
-                + "         		 localSchema:Ref-France-Finess ?y;localSchema:Type-France-Finess ?u;\r\n"
+                + "         		 localSchema:emergency ?r;localSchema:operatorType ?t;\r\n"
+                + "         		 localSchema:ref-France-Finess ?y;localSchema:type-France-Finess ?u;\r\n"
                 + "         		 schema:url ?i;schema:telephone ?o;schema:email ?p;\r\n"
-                + "         		 localSchema:BuildingNumber ?a;schema:streetAddress ?s;\r\n"
-                + "         		 schema:location ?d;schema:postalCode ?f;localSchema:Osm_TimeStamp ?h;\r\n"
-                + "            schema:MedicalSpecialty ?j;geao:lat_long ?z;schema:name ?v}" ;
+                + "         		 localSchema:buildingNumber ?a;schema:streetAddress ?s;\r\n"
+                + "         		 schema:location ?d;schema:postalCode ?f;localSchema:osm_TimeStamp ?h;\r\n"
+                + "            schema:MedicalSpecialty ?j;geao:lat_long ?z;schema:name ?v}limit 200" ;
 
 
         // The query used to retrive our information using SPARQL
@@ -84,7 +84,7 @@ public class HospitalServices {
                 Literal BuildingNumber= soln.getLiteral("BuildingNumber");
                 Literal Emergency= soln.getLiteral("Emergency");
                 Literal OperatorType= soln.getLiteral("OperatorType");
-                Literal Osm_TimeStamp= soln.getLiteral("Osm_TimeStamp");
+                Literal osm_TimeStamp= soln.getLiteral("TimeStamp");//?
                 Literal ref_France_Finess= soln.getLiteral("Ref_France_Finess");
                 Literal lat_long= soln.getLiteral("lat_long");
                 Literal city= soln.getLiteral("City");
@@ -104,7 +104,7 @@ public class HospitalServices {
                 hospital.setBuildingNumber(BuildingNumber.getString());
                 hospital.setEmergency(Emergency.getString());
                 hospital.setOperatorType(OperatorType.getString());
-                hospital.setOsm_TimeStamp(Osm_TimeStamp);
+                hospital.setOsm_TimeStamp(osm_TimeStamp.getString());//??
                 hospital.setRef_France_Finess(ref_France_Finess.getString());
                 hospital.setLat_long(lat_long.getString());
                 hospital.setCity(city.toString());
@@ -118,6 +118,7 @@ public class HospitalServices {
                 hospital.setTelephone(telephone.getString());
 
                 updateHospitalsList.add(hospital);
+
 
             }
 

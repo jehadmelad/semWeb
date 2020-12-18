@@ -1,14 +1,12 @@
 package com.semweb.semWebArt.model;
 
-import org.apache.jena.rdf.model.Literal;
-
 public class Hospital {
 
 
     String buildingNumber;
 	String emergency;
 	String operatorType;
-	Literal osm_TimeStamp;
+	String osm_TimeStamp;//
 	String ref_France_Finess;
 	String lat_long;
 	String city;
@@ -42,10 +40,10 @@ public class Hospital {
     public void setOperatorType(String operatorType) {
         this.operatorType = operatorType;
     }
-    public Literal getOsm_TimeStamp() {
+    public String getOsm_TimeStamp() {
         return osm_TimeStamp;
     }
-    public void setOsm_TimeStamp(Literal osm_TimeStamp) {
+    public void setOsm_TimeStamp(String osm_TimeStamp) {
         this.osm_TimeStamp = osm_TimeStamp;
     }
     public String getRef_France_Finess() {

@@ -25,9 +25,26 @@ To Define a knowledge model (that is, an ontology) that describes the types of e
 To Display information on Web pages together with structured data, for best search engine optimization.
 
 ### Files
-Inside fuseki schema and data file :
-<p>1- Put the (Bik-Hos and Bike-Hos-data) Database in the fuseki folder path:/apache-jena-fuseki-3.16.0\apache-jena-fuseki-3.16.0\run\databases </p>
-<p> 2- The using file csv and java class to insert the data by rdf format inside the fuseki</p>
+There are some requirements before running this project. Therefore, after ```git clone https://github.com/jehadmelad/semWeb.git``` 
+our repository on your machine. You have to copy 2 folders **Bik-Hos** and  **Bike-Hos-data** Inside the following Fuseki Directory :
+<ol>  
+<li>Put the (Bik-Hos and Bike-Hos-data) Folders in the Fuseki folder 
+
+````
+path:/apache-jena-fuseki-3.16.0\apache-jena-fuseki-3.16.0\run\databases
+```` 
+</li>
+
+<li>  After that, you have to run Fuseki server and create a new dataset hold the 
+same names as the two folders (Bik-Hos and Bike-Hos-data ), at the end it sould look like the img below.
+
+![set up database.](fuseki schema and data/fuseki-1.PNG)
+
+</li>
+</ol>
+
+
+
 #### Tools
 - The tools that we used to achieve our goals were:
 - Java environment (__Spring boot__).
@@ -49,10 +66,11 @@ Inside fuseki schema and data file :
     
     
 #### Ontology (_Bik-Hos_ )
+For the ontology, we try to define our ontology based on topics that we are interested in. Therefore we have an ontology to serve bike stations and hospitals, the ontology illustrate as shown in the img below . In the next few lines, we will go through details:
+
+![set up database.](fuseki schema and data/ontology.PNG)
 
 
-
-For the ontology, we try to define our ontology based on topics that we are interested in. Therefore we have an ontology to serve bike stations and hospitals. In the next few lines, we will go through details:
 
 
 
@@ -95,7 +113,9 @@ For the ontology, we try to define our ontology based on topics that we are inte
 <a href="lon">lon</a> | &nbsp;
 <a href="name">name</a> | &nbsp;
 <a href="name">name</a> | &nbsp;
-</div><br>
+</div>
+<p ><strong>Hint:</strong> More explaination will be included in the report ... To be continue </p>
+<br>
 
 ### Full Details
 ***
@@ -107,8 +127,6 @@ For the ontology, we try to define our ontology based on topics that we are inte
   <p>[ SpatialThing ] It is an existing vocabulary model representing geolocation coordinations lat(itude), long(itude) and other information about spatially-located things, using WGS84 as a reference datum</p>
 </div>
 <br>
-
-***
 <br>
 
 ***
@@ -192,7 +210,6 @@ For the ontology, we try to define our ontology based on topics that we are inte
   <h5>Class: &nbsp;&nbsp;bikhos:Thing</h5>
   <p></p>
     <p><strong>Status:</strong> Testing</p>
-    <p><strong>Subclass Of:</strong> &nbsp;<a href="#City">City</a></p>
     <p>[Thing] - Thing of every thing (Main Class of all classes)</p>
 </div>
 <br>
